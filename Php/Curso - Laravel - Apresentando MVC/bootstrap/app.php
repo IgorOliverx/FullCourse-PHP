@@ -5,8 +5,8 @@
 | Create The Application
 |--------------------------------------------------------------------------
 |
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
+| The first thing we will do is create a new Curso - Laravel - Apresentando MVC application instance
+| which serves as the "glue" for all the components of Curso - Laravel - Apresentando MVC, and is
 | the IoC container for the system binding all of the various parts.
 |
 */

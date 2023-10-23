@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
+    public function create()
+    {
+        return view('series.create');
+    }
     public function index(Request $request)
     {
         //$request->get('id'); // Posso procurar o retorno que cai na requisição
@@ -19,7 +23,7 @@ class SeriesController extends Controller
           'naruto',
           'one piece',
           'HunterxHunter',
-        'Kimetsu no Yaiba',
+           'Kimetsu no Yaiba',
         ];
 
 
@@ -27,4 +31,6 @@ class SeriesController extends Controller
 
         return view('series.index') -> with('series', $series);
     }
+
+
 }
