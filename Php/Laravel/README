@@ -1,0 +1,76 @@
+CURSO LARAVEL: ENTENDENDO A ESTRUTURA
+
+CONHECENDO O MVC: -> PARA QUE SERVE CADA COISA:
+
+Primeiramente, o MVC é um estilo de arquitetura de software, que divide o programa em responsabilidades. 3 principais.
+
+    MODEL -> Representa a camada de dados do aplicativo. Pense no MODEL como o back end do back end.
+Lida com lógica/regras de negócio, manipulação de dados, ORM, recuperam, armazenam e processam dados.
+Não tem conhecimento do View ou do Controller
+
+    VIEW -> A view é responsável pela apresentação dos dados ao usuário. Não tem lógica de negócios e refletem os estados dos modelos;
+
+    CONTROLLER -> Atua como um intermediário entre model e view. Ele recebe solicitações do usuário(HTTP) processa essas solicitações e toma decisões com base nos dados recebidos dos MODELOS;
+Então é tipo isso, ele recebe uma solicitação, processa, e toma a decisão com base no modelo, fazendo a view exibir o que a decisão requiriu;
+
+FLUXO DE UMA APLICAÇÃO MVC:
+
+1° O usuário interage com a interface do usuário (front-end), como por exemplo clicando num botão
+2° A solicitação é roteada para o CONTROLLER apropriado;
+3° O CONTROLLER consulta o MODEL roteado e realiza as lógicas definidas no MODEL
+4° Os MODELS atualizam seus dados, se necessário. Ex: enviando dados de um formulário
+5° O CONTROLLER instrui a VIEW sobre as mudanças e a se atualizar com os dados do MODEL
+6° a VIEW exibe os dados atualizados ao usuário
+
+
+
+        ROTAS E VIEWS:
+
+Rotas são as urls: -> podemos definir uma rota da seguinte forma: Route::get(url'');
+As rotas por sua vez chamam as views, que são as representações gráficas das páginas(as views contém os templates que são a estruturação html ou até mesmo com um framework front-end)
+Templates também renderizam dados dinâmicos
+
+
+    CRIAR NOVA ROTA:
+Route::{verbo http}('{sua rota}', {Código a ser executado});
+Route::get('url', {função/codigo a ser executado})
+
+    CRIAR ROTA COM TODOS OS METODOS HTTP:
+Route::get('url', {função/codigo a ser executado}) --resource
+
+    ROTEANDO PARA O CONTROLLER;
+abrir terminal na pasta pai(no caso Laravel):
+'php artisan make:Controller {nomeDoController}Controller'
+
+        PADRÃO DE NOME CONTROLLER:
+
+Actions Handled By Resource Controller
+________________________________________________________________
+    Verb |   |      URI           |  |Action | 	|Route Name     |
+_________|___|____________________|__|_______|__|_______________|
+GET 	 |   |/photos 	          |  |index  |  |photos.index   |
+GET 	 |   |/photos/create 	  |  |create | 	|photos.create  |
+POST 	 |   |/photos 	          |  |store  |	|photos.store   |
+GET 	 |   |/photos/{photo} 	  |  |show   |	|photos.show    |
+GET 	 |   |/photos/{photo}/edit|  |edit   |	|photos.edit    |
+PUT/PATCH| 	 |/photos/{photo} 	  |  |update | 	|photos.update  |
+DELETE 	 |   |/photos/{photo} 	  |  |destroy| 	|photos.destroy |
+___________________________________________________________________
+
+
+        LIDANDO COM REQUEST E RESPONSE (CONTROLLER)
+
+    FUNÇÃO REQUEST
+
+Normalmente o controller recebe uma requisição (http) e retorna uma resposta, geralmente em forma de JSON pro front end consumir essa api
+$request-> //Acessa as requisições da forma que eu escolher com o parametro da frente
+
+        $request->get('id'); // Posso procurar o retorno que cai na requisição
+        //$request->url(); // Me retorna a url da pagina em que estou
+        //$request->method() // Me retorna o metodo que foi utilizado para acessar a requisição, tipo GET ou POST;
+        //$request->input('id'); // Retorna o input que veio de um formulario
+
+    FUNÇÃO RESPONSE
+Ela retorna um objeto do tipo Response com o corpo, status e cabeçalhos.
+Alternativa correta! Assim como no curso de MVC nós criamos nosso objeto do tipo Response,
+nós podemos fazer aqui também e o Laravel já nos entrega uma função que pode facilitar este trabalho.

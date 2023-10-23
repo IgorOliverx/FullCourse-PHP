@@ -1,0 +1,299 @@
+        Criação de um CRUD PDO com PHP -> sem uso de frameworks.
+CRUD é um acrônimo para as quatro operações do Banco:
+CREATE (Criar), READ (Ler), Update (Atualizar) e DELETE (Excluir). Quando você cria uma aplicação que conte com todas estas operações, está desenvolvendo um CRUD.
+(Sem padrão de projeto como MVC)
+
+REQUISITOS:
+Conhecimento da sintaxe, arrays, estrutura condicional, iteração, POO, exceptions, strings e conhecimento basico sobre métodos de requisição HTTP: GET/HEAD/POSTPUT/DELETE/CONECT/OPTIONS/TRACE/PATCH
+Softwares utilizados: XAMPP e MYSQL WORKBENCH
+
+1° PASSO: criação do banco "crudsimples" -> e tabela contatos:
+
+
+===========================================================================================================================================
+
+2° PASSO: conexão do PHP com o banco de dados usando a classe PDO(interface de conexão simplificada)
+    -Crie um arquivo com a extensão .php e inicie as tags "<?php ?>";
+    -Inicie criando um bloco "Try Catch" para instanciar a classe PDO;
+ try {
+ $conexao = new PDO("mysql:host=localhost; dbname=crudsimples", "root", "");
+ $conexao -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ $conexao -> exec("set names utf8")
+ } catch (PDOException $erro) {
+     echo "ERRO" . $erro->getMessage();
+ }
+Existem diversas formas de se instanciar a classe, como por exemplo criar as variaveis $banco $senha $host $user e apenas chama-lás nos parametros do PDO(são 4);
+PARAMETROS:<objeto PDO> = new PDO(String <Nome da fonte de dados>, String <usuário do banco>, String <senha do banco>);
+A variável $conexão será nosso objeto manipulador;
+O método setAttribute() nos permite adicionar atributos no objeto de conexão;
+Este é apenas uma forma de fazer a conexão, não precisamos entender a fundo alguns atributos PDO agora;
+Como estamos no brasil a codificação deve ser feita em UTF-8 por se utilizar acentos, então vamos apenas lançar uma exceção e informar codificação utf-8 para nosso sql
+
+===========================================================================================================================================
+
+3° PASSO: crie um formulário simples no html com os respectivos campos que criaste no sql
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud simples</title>
+</head>
+<body>
+    <form action="?act=save" method="POST" name="form1">
+    <h1>Agenda de contatos</h1>
+    <hr>
+    <input type="hidden" name="id" id=""<?php
+    //Preenche o id no campo id com um valor.
+    if(isset($id) && $id != null || $id !=""){
+        echo "value=\"{$id}\"";
+    }
+    ?>/>
+    Nome:
+    <input type="text" name="nome" <?php
+    //Preenche o nome no campo nome com um valor.
+    if(isset($nome) && $nome != null || $nome !=""){
+        echo "value=\"{$nome}\"";
+    }?>  />
+    E-mail:
+    <input type="text" name="email" id="" <?php
+    //Preenche o email no campo email com um valor.
+    if(isset($email) && $email != null || $email !=""){
+        echo "value=\"{$email}\"";
+
+    }
+    ?>  />
+    Celular:
+    <input type="text" name="celular" id=""<?php
+    //Preenche o celular no campo celular com um valor.
+    if(isset($celular) && $celular != null || $celular !=""){
+        echo "value=\"{$celular}\"";
+    }?>/>
+    <input type="submit" value="salvar"/>
+    <input type="reset" value="novo"/>
+    <hr>
+    </form>
+    <table border="1" width="100%">
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Celular</th>
+            <th>Ações</th>
+        </tr>
+        <?php
+        try {
+
+            $stmt = $conexao->prepare("SELECT * FROM contatos");
+
+            if ($stmt->execute()) {
+                while ($rs = $stmt->fetch(PDO::FETCH_OBJ)) {
+                    echo "<tr>";
+                    echo "<td>".$rs->nome."</td><td>".$rs->email."</td><td>".$rs->celular
+                        //indicar na âncora “href” do link os parâmetros “act” e “id” que serão lidos pela mesma página no refresh.
+                        ."</td><td><center><a href=\"?act=upd&id=" . $rs->id . "\">[Alterar]</a>"
+                        ."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                        ."<a href=\"?act=del&id=" . $rs->id . "\">[Excluir]</a></center></td>";
+                    echo "</tr>";
+                }
+            } else {
+                echo "Erro: Não foi possível recuperar os dados do banco de dados";
+            }
+        } catch (PDOException $erro) {
+            echo "Erro: ".$erro->getMessage();
+        }
+        ?>
+    </table>
+
+
+</body>
+</html>
+-Coloque tags de abertura e fechamento do php dentro de cada input
+ <?php
+            //isset -> verifica se a variavel $id existe/ Preenche o id no campo id com um valor "value"
+            if (isset($id) && $id != null || $id != "") {
+                echo "value=\"{$id}\"";
+            }
+?>
+Essa instrução se repete em todos os inputs quais foram criados no sql
+Veja que também utilizamos uma tag input do tipo “hidden” e esta será utilizada para o recurso de Update.
+
+===========================================================================================================================================
+
+    5° PASSO:
+Agora vamos fazer a solicitação de set de valores via method POST
+
+// Verificar se foi enviando dados via POST
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $id = (isset($_POST["id"]) && $_POST["id"] != null) ? $_POST["id"] : "";
+    $nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
+    $email = (isset($_POST["email"]) && $_POST["email"] != null) ? $_POST["email"] : "";
+    $celular = (isset($_POST["celular"]) && $_POST["celular"] != null) ? $_POST["celular"] : NULL;
+} else if (!isset($id)) {
+    // Se não se não foi setado nenhum valor para variável $id
+    $id = (isset($_GET["id"]) && $_GET["id"] != null) ? $_GET["id"] : "";
+    $nome = NULL;
+    $email = NULL;
+    $celular = NULL;
+}
+Com estas instruções temos agora o alicerce de todo o CRUD.
+
+ATÉ AQUI:
+-Criamos o sql
+-Criamos um arquivo php e um formulario html
+-Estabelecemos a conexão com a classe PDO
+-Verificamos o input e redigimos condições para quando estiverem nulas ou não existirem
+-Estabelecemo o metodo POST
+
+===========================================================================================================================================
+
+    6° PASSO CRIAÇÃO DO 'C' => CREATE
+Vamos colocar este script acima da tag de fechamento do php
+if (isset($_REQUEST["act"]) && $_REQUEST["act"] == "save" && $nome != "") {
+    try {
+        $stmt = $conexao->prepare("INSERT INTO contatos (nome, email, celular) VALUES (?, ?, ?)");
+        $stmt->bindParam(1, $nome);
+        $stmt->bindParam(2, $email);
+        $stmt->bindParam(3, $celular);
+
+        if ($stmt->execute()) {
+            if ($stmt->rowCount() > 0) {
+                echo "Dados cadastrados com sucesso!";
+                $id = null;
+                $nome = null;
+                $email = null;
+                $celular = null;
+            } else {
+                echo "Erro ao tentar efetivar cadastro";
+            }
+        } else {
+               throw new PDOException("Erro: Não foi possível executar a declaração sql");
+        }
+    } catch (PDOException $erro) {
+        echo "Erro: " . $erro->getMessage();
+    }
+}
+EXPLICAÇÃO:
+ -o primeiro if verifica se a variavel $act esta definida por meio da solicitação HTTp
+
+ -Aqui criamos uma variável que preparou o sql para receber valores, usamos o nome da tabela, os parametros e os valores como "?" para depois ser substituído pelos valores reais
+$stmt = $conexao->prepare("INSERT INTO contatos (nome, email, celular) VALUES (?, ?, ?)");
+
+ -Aqui nos vinculamos os parametros com o metodo bindParam
+$stmt->bindParam(1, $nome);
+$stmt->bindParam(2, $email);
+$stmt->bindParam(3, $celular);
+
+ -Agora toda a preparação de solicitação está feita, então vamos executar com o comando execute()
+ if ($stmt->execute()) {
+
+  -Apartir daí vamos verificar os resultados
+
+ //rowcount retorna o número de linhas insercidas ou afetadas, e se ao menos 1 linha for alterada então o dados foram adicionados
+            if ($stmt->rowCount() > 0) {
+                echo "Dados cadastrados com sucesso!";
+                //se o dados forem enviados para o sql com sucesso após passarem pela verificação, então os transformamos em null ao dar o refresh da pagina
+                $id = null;
+                $nome = null;
+                $email = null;
+                $celular = null;
+            } else {
+                echo "Erro ao tentar efetivar cadastro";
+            }
+        } else {
+               throw new PDOException("Erro: Não foi possível executar a declaração sql");
+        }
+    } catch (PDOException $erro) {
+        echo "Erro: " . $erro->getMessage();
+    }
+}
+
+===========================================================================================================================================
+    7°PASSO
+
+A funcionalidade “Read” pode ser construída de algumas maneiras: por usar um filtro para ler um registro por vez e em seguida o apresentar na tela
+ou mesmo utilizar algum filtro para ler vários registros
+e listá-los na tela, ou ainda, chamando uma listagem inteira por trazer todos os registros de uma tabela. Vamos chamar uma listagem inteira, embora isto seja verdade apenas
+de forma acadêmica. Vamos seguir adiante, criando
+uma tabela html com a tag table. Você deve posicionar esta tag table logo depois da tag de fechamento do formulário “</form
+>” que criamos dentro das tags “<body>” e “</body>” em nosso html e antes da tag de fechamento “</body>”. Este é o código:
+
+<table border="1" width="100%">
+    <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Celular</th>
+        <th>Ações</th>
+    </tr> //aqui apenas criamos uma tabela que posteriormente exibirá as infos
+    <?php
+    // Bloco que realiza o papel do Read - recupera os dados e apresenta na tela
+    try {
+        $stmt = $conexao->prepare("SELECT * FROM contatos"); //a variavel stmt realiza metodos da classe PDO -> aqui preparamos o banco de dados para uma instrução posterior
+            if ($stmt->execute()) { //execute() faz a consulta ao sql
+                while ($rs = $stmt->fetch(PDO::FETCH_OBJ)) { //vai iterar através dos resultados obtidos e o fetch pdo vai transformar cada registro como um objeto
+                    echo "<tr>";
+                echo "<td>".$rs->nome."</td><td>".$rs->email."</td><td>".$rs->celular
+                           ."</td><td><center><a href=\"?act=upd&id=" . $rs->id . "\">[Alterar]</a>"
+                           ."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                           ."<a href=\"?act=del&id=" . $rs->id . "\">[Excluir]</a></center></td>";
+                echo "</tr>";
+                }
+            } else {
+                echo "Erro: Não foi possível recuperar os dados do banco de dados";
+            }
+    } catch (PDOException $erro) {
+        echo "Erro: ".$erro->getMessage();
+    }
+    ?>
+</table>
+
+
+===========================================================================================================================================
+
+    8° PASSO UPDATE - alterando registros salvos no banco de dados
+
+    if (isset($_REQUEST["act"]) && $_REQUEST["act"] == "upd" && $id != "") {//começa verificando se uma ação 'upd' foi solicitada e se o id nao está vazio
+        //a condição atendida como verdadeira implica que o usuário está tentando atualizar um contato existente
+        try {
+            $stmt = $conexao->prepare("SELECT * FROM contatos WHERE id = ?");//consulta no sql e preparação da tabela
+            $stmt->bindParam(1, $id, PDO::PARAM_INT);// o id a ser descoberto é vinculo ao marcador de posição stmt
+            if ($stmt->execute()) {
+                $rs = $stmt->fetch(PDO::FETCH_OBJ);//fetch serve para recuperar algum objeto
+                //depois que a consulta é atualizada os valores sao guardados em $rs
+                $id = $rs->id;
+                $nome = $rs->nome;
+                $email = $rs->email;
+                $celular = $rs->celular;
+            } else {
+                throw new PDOException("Erro: Não foi possível executar a declaração sql");
+            }
+        } catch (PDOException $erro) {
+            echo "Erro: ".$erro->getMessage();
+        }
+    }
+//após a busca e realozação de valores preparamos novamente o sql para agora fazer um update, note que definimos seus valores como "?" e depois os substituimos com o blind param
+    if ($id != "") {
+        $stmt = $conexao->prepare("UPDATE contatos SET nome=?, email=?, celular=? WHERE id = ?");
+        $stmt->bindParam(4, $id);
+    } else {
+        $stmt = $conexao->prepare("INSERT INTO contatos (nome, email, celular) VALUES (?, ?, ?)");
+    }
+
+===========================================================================================================================================
+    9° PASSO --> DELETE
+
+    if (isset($_REQUEST["act"]) && $_REQUEST["act"] == "del" && $id != "") { //realiza o mesmo do bloco anterior, mas agora com o objeto 'del'
+        try {
+            $stmt = $conexao->prepare("DELETE FROM contatos WHERE id = ?");//prepara a consulta e faz a declaração com DELETE e recebe um parâmetro id
+            $stmt->bindParam(1, $id, PDO::PARAM_INT);//apenas fazemos a consulta do parametro
+            if ($stmt->execute()) {//executamos o delete from com o bindparam
+                echo "Registo foi excluído com êxito";
+                $id = null;//atribui o id como null
+            } else {
+                throw new PDOException("Erro: Não foi possível executar a declaração sql");
+            }
+        } catch (PDOException $erro) {
+            echo "Erro: ".$erro->getMessage();
+        }
+    }

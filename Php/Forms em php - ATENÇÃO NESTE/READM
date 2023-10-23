@@ -1,0 +1,31 @@
+É de extrema importância destacar que pra enviar formulários pro php(servidor back-end) processar, é preciso de duas requisições no html
+METHOD E ACTION (name/value)
+
+
+ISSO SE CHAMA SUPERGLOBAIS
+
+METHOD - metodo que o php vai receber ou enviar as informações
+ACTION - para onde vai ser enviado esses dados
+
+name/value serve para referenciar e eu poder encontrar estes dados.
+
+O que cada método faz:
+Os métodos HTTP POST, GET e REQUEST são usados para realizar diferentes tipos de solicitações em uma aplicação web. Aqui estão as principais diferenças entre eles:
+
+    GET:
+        Tipo de solicitação: É usado para recuperar informações do servidor.
+        Segurança: As informações são anexadas à URL na forma de parâmetros de consulta (query parameters), o que pode tornar os dados visíveis na barra de endereços do navegador. Portanto, não é adequado para o envio de dados sensíveis.
+        Limitação de tamanho: As URLs têm um limite de tamanho, o que restringe a quantidade de dados que podem ser enviados usando o método GET.
+        Cache: Solicitações GET podem ser armazenadas em cache pelo navegador, o que pode melhorar o desempenho, mas também pode resultar em dados desatualizados sendo exibidos.
+
+    POST:
+        Tipo de solicitação: É usado para enviar dados ao servidor, como envio de formulários, envio de dados de login, etc.
+        Segurança: Os dados são enviados no corpo da solicitação HTTP, não na URL, tornando-o mais seguro para dados sensíveis, pois eles não são visíveis na barra de endereços do navegador.
+        Limitação de tamanho: O tamanho dos dados enviados via POST é geralmente maior do que com o GET, tornando-o adequado para o envio de grandes quantidades de dados.
+        Cache: As solicitações POST geralmente não são armazenadas em cache, pois podem ter efeitos colaterais no servidor (por exemplo, enviar uma atualização de estado).
+
+    REQUEST:
+        O termo "REQUEST" geralmente não se refere a um método HTTP específico, mas sim a uma solicitação HTTP em geral, que pode ser uma solicitação GET, POST, PUT, DELETE ou outro método suportado pelo protocolo HTTP.
+        Em contextos de programação web, "REQUEST" geralmente se refere a um objeto que contém informações sobre a solicitação HTTP atual, incluindo cabeçalhos, métodos, dados enviados e muito mais. Esse objeto é frequentemente usado em linguagens de programação para manipular solicitações e tomar decisões com base nas informações recebidas do cliente.
+
+Portanto, o GET é usado principalmente para recuperar dados, o POST para enviar dados ao servidor e o termo "REQUEST" geralmente se refere à manipulação das solicitações HTTP em um ambiente de programação web, independentemente do método específico usado. É importante escolher o método apropriado com base na finalidade da solicitação e nas considerações de segurança e tamanho de dados.

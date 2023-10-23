@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Interação entre formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Apresente-se para nós</h1>
+
+</header>
+<form action="cad.php" method="get">
+    <label for="idNome">Nome:</label>  <!---O for(label) quando aponta pro id do input, referencia mais possibilidades de estilização css--->
+  <input type="text" name="nome" id="idNome">
+    <label for="idSobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="idSobrenome">
+    <label>E-Mail:</label>
+    <input type="text" name="email" id="">
+  <input type="submit" value="enviar">
+</form>
+
+</body>
+</html>

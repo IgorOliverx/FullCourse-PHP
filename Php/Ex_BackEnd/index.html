@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<main>
+    <section class="secMain">
+        <div class="container1">
+            <div class="titulo1">Instruções</div>
+            <p class="text1">Esta aplicação tem como finalidade demonstrar os valores que serão gastos com combustível durante uma viagem, com base no consumo de seu veículo, e com sua distância determinada por você!</p>
+            <p class="text11">Os combustíveis disponíveis para este cáculo são:</p>
+            <ul>
+                <li>Álcool</li>
+                <li>Diesel</li>
+                <li>Gasolina</li>
+            </ul>
+        </div>
+   
+
+        
+        <div class="container2">
+            <div class="titulo2">Cálculo do valor (R$) do consumo</div>
+            <div class="formContainer">
+                <form action="calcula.php" method="post">
+                <label for="dis">Distância em Quilômetros a ser percorrida</label>
+                <input type="number" name="distancia" id="dis" value="" style="height: 20px; width: 350px;"><br><br>
+                <label for="">Consumo de combustível do veículo (Km/l)</label>
+                <input type="number" name="consumo" id="" style="height: 20px; width: 350px;">
+            </div>
+            <br><br>
+            <input type="submit" value="Calcular">
+        </form>
+        </div>
+    </section>
+   
+</main>
+
+
+
+</body>
+</html>

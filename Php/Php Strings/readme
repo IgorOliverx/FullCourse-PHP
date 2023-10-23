@@ -1,0 +1,5 @@
+Aprendemos a extrair um pedaço de uma string;
+Vimos como verificar a posição de uma string em outra;
+Entendemos como recuperar o tamanho de uma string;
+Vimos como manipular o case de strings;
+Conhecemos a extensão mbstring.

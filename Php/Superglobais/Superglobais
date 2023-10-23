@@ -1,0 +1,15 @@
+Superglobais do php.
+
+
+$_GET - gera um array associativo com todas as variáveis que foram passadas por parâmetro em uma url -
+as infos ficam na barra de pesquisa;
+
+$_POST - gerra um array associativo a partir de dados de formulários que foram enviados para o servidor
+
+$_REQUEST - mistura o get e post
+
+$_ENV -
+
+$_SESSION -
+
+$_SERVER -

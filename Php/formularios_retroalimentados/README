@@ -1,0 +1,5 @@
+Entedendo formulários retroalimentados no PHP -> forma funcional de trabalhar com formulários
+
+Como eu fazia antes: 1 arquivo .html e 1.php
+
+Como fazer agora: Criar um único arquivo php -> criar o formulário dentro do php

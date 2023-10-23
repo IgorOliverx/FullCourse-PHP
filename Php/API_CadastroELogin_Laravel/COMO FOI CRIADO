@@ -1,0 +1,7 @@
+COMANDOS:
+
+composer require laravel/io
+php artisan ui vue --auth
+php artisan migrate
+
+precisa instalar o vite e rodar um npm run dev

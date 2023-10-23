@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+}
+
+
+.secMain{
+    width: 70%;
+    margin-left: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1{
+    width: 100%;
+    height: 250px;
+    border: 10px;
+    border: 1px solid gainsboro;
+    
+}
+.container1 .titulo1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 30px;
+    border: 1px solid gainsboro;
+    color: blue;
+}
+.container1 .text1{
+    width: 90%;
+   margin-left: 10px;
+}
+.container1 .text11{
+    width: 90%;
+   margin-left: 10px;
+}
+
+.container2{
+    margin-left: 10px;
+    width: 100%;
+    height: 250px;
+    border: 10px;
+    border: 1px solid gainsboro;
+
+}
+
+.container2 .titulo2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 30px;
+    border: 1px solid gainsboro;
+    color: blue;
+}
+
+.container2 .formContainer{
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 12px;
+
+}
+
+.secAqui{
+    width: 500px;
+    margin-left: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+}
+
+.containerAqui{
+    width: 100%;
+   
+}
+
+.containerAqui .tittle{
+    width: 100%;
+    background-color: aliceblue;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.containerAqui .containerResultado{
+    background-color: palegreen;
+    width: 90%;
+    margin-left: 20px;
+}
+.btn{
+    background-color: lightblue; color: white; border: none; margin-left: 30px;
+}
+
+
+
+

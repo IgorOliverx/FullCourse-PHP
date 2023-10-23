@@ -1,0 +1,17 @@
+Em desenvolvimento web, os métodos HTTP GET e POST, juntamente com o objeto request, são usados para enviar dados de um cliente (geralmente um navegador) para um servidor web. Eles têm finalidades diferentes e são usados em diferentes situações:
+
+    GET:
+        Propósito: O método GET é usado para solicitar dados de um servidor. Ele é usado quando você deseja recuperar informações do servidor, como páginas da web, recursos ou dados específicos.
+        Visibilidade dos dados: Os dados enviados por meio do método GET são anexados à URL como parâmetros de consulta (query parameters), tornando-os visíveis na barra de endereços do navegador. Isso significa que eles são visíveis para o usuário e podem ser marcados como favoritos, compartilhados e armazenados no histórico do navegador.
+        Limitações de tamanho: O tamanho dos dados enviados via GET é limitado. A URL tem um limite de comprimento, e o envio de grandes quantidades de dados pode causar problemas de compatibilidade com alguns navegadores e servidores.
+
+    POST:
+        Propósito: O método POST é usado para enviar dados para o servidor para processamento. Ele é usado quando você deseja enviar informações que podem ser sensíveis, como informações de formulários, senhas ou dados que devem ser processados pelo servidor.
+        Visibilidade dos dados: Os dados enviados por meio do método POST não são visíveis na URL, tornando-os mais seguros em comparação com o método GET. Os dados são incluídos no corpo da solicitação HTTP, portanto, não são exibidos na barra de endereços do navegador.
+        Sem limitações de tamanho: O tamanho dos dados enviados via POST é maior em comparação com o método GET, e ele não tem as mesmas limitações de tamanho da URL.
+
+    Request:
+        Propósito: O objeto request geralmente se refere ao objeto de solicitação HTTP em um servidor web. Ele contém informações sobre a solicitação feita pelo cliente, como cabeçalhos, método (GET, POST, etc.), URL, parâmetros e corpo da solicitação.
+        Manipulação no servidor: O objeto request é manipulado no lado do servidor para processar a solicitação do cliente. Os servidores web, como o Apache ou o Node.js, oferecem maneiras de acessar e analisar o objeto request para tomar decisões e gerar respostas apropriadas.
+
+Em resumo, a principal diferença entre GET e POST está no propósito e na forma como os dados são enviados, com GET sendo usado para recuperar dados e POST para enviar dados para processamento. O objeto request é uma parte do processamento no servidor e fornece informações detalhadas sobre a solicitação feita pelo cliente, independentemente do método HTTP utilizado
