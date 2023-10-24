@@ -1,6 +1,7 @@
 <?php
 
-namespace src\Model;
+namespace Alura\Banco\Modelo;
+
 class Endereco
 {
     private $cidade;

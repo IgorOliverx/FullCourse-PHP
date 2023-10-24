@@ -1,15 +1,11 @@
 <?php
 
-//Fazendo autoload em php -> carregamento de classes de forma automatica
-
-spl_autoload(function (string $nomeClass){
-    $caminhoArquivo = str_replace('src\\', 'src', $nomeClass);
+spl_autoload_register(function (string $nomeCompletoDaClasse) {
+    $caminhoArquivo = str_replace('Alura\\Banco', 'src', $nomeCompletoDaClasse);
     $caminhoArquivo = str_replace('\\', DIRECTORY_SEPARATOR, $caminhoArquivo);
     $caminhoArquivo .= '.php';
 
-
-    if(file_exists($caminhoArquivo)){
+    if (file_exists($caminhoArquivo)) {
         require_once $caminhoArquivo;
     }
-
 });

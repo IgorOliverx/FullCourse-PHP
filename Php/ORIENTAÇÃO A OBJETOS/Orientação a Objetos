@@ -4,7 +4,16 @@ Composição de objetos é uma prática avançada de POO que consiste em dividir
 Pense em um carro. O mesmo é formado por um volante, um banco, rodas, vidros. Imagine que cada um destes itens
 é uma classe. Juntando eu tenho uma composição de objetos para atingir minha solução.
 
+CLASSES: As classes só estão prontas para serem usadas quando poderem criar objetos concretos.
 
+CLASSES ABSTRATAS: Classes abstratas são como moldes para as classe que as herdarem. Pense no seguinte, eu tenho uma classe Animal abstrata e as classes Mamíferos e Aves que herdam a classe Animal. Quando eu usar a herança para dizer que Mamiferos e Aves sao classes filhas de animais, eu obrigatoriamente tenho que usar todos os parametros + seus metodos que forem definidos como também abstratos -> não pode instanciar objetos
+MÉTODOS ABSTRATOS: A classe obrigatoriamente também precisa ser abstrata
+
+Classes que ainda não estão prontas para serem instanciadas e precisam ser estendidas (classes abstratas);
+
+CLASSES DE SERVIÇOS E CLASSES DE MODELO:
+SERVIÇO: REPRESENTA UMA FUNCIONALIDADE;
+MODELO: REPRESENTA ALGO REAL;
 
 CONCEITOS POO:
 
@@ -75,3 +84,5 @@ aluno e professor herdem as características de pessoa, desta maneira pode- se d
 professor são subclasses de pessoa. Também podemos dizer que uma classe pode ser abstrata(abstract)
 ou seja ela não pode ter uma instância, ela apenas "empresta" seus atributos e metódos como molde
 para novas classes.
+
+
