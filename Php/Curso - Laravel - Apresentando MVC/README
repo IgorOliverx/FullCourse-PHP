@@ -7,6 +7,9 @@ Primeiramente, o MVC é um estilo de arquitetura de software, que divide o progr
     MODEL -> Representa a camada de dados do aplicativo. Pense no MODEL como o back end do back end.
 Lida com lógica/regras de negócio, manipulação de dados, ORM, recuperam, armazenam e processam dados.
 Não tem conhecimento do View ou do Controller
+MODEL DO ELOQUENT ORM:
+É mapeada para uma tabela do banco
+Comando: php artisan make:model (nome igual ao da tabela)
 
     VIEW -> A view é responsável pela apresentação dos dados ao usuário. Não tem lógica de negócios e refletem os estados dos modelos;
 
@@ -74,3 +77,28 @@ $request-> //Acessa as requisições da forma que eu escolher com o parametro da
 Ela retorna um objeto do tipo Response com o corpo, status e cabeçalhos.
 Alternativa correta! Assim como no curso de MVC nós criamos nosso objeto do tipo Response,
 nós podemos fazer aqui também e o Laravel já nos entrega uma função que pode facilitar este trabalho.
+
+
+        UTILIZANDO CODES LARAVEL CLI
+
+MIGRATION: Um ponto de alteração no seu banco de dados -> funciona como um versionamento do banco de dados
+
+ Essa função está criando uma tabela 'users' com as informações descritas abaixo, id, nome, email, etc
+ public function up(): void
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+VANTAGENS AO UTILIZAR MIGRATIONS:
+
+Sincronização/alocação/analise/manipulação de dados localmente;
+Usando o bd sqlite posso administrar tudo que preciso sem a necessidade de um server ou um docker previamente configurado
+
+Versionamento do banco: Assim como em ferramentas de versionamento de código, o migrations me permite fazer o versionamento do banco de dados -> excluir alterações, subir alterações, mapear alterações, criar ramificações, etc

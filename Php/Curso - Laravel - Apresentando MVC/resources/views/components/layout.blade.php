@@ -11,10 +11,11 @@
 </head>
 <body>
 <main>
+    <div class="container">
     <h1>{{$title}}</h1>
 
   {{$slot}}
-
+    </div>
 </main>
 </body>
 </html>

@@ -1,0 +1,215 @@
+DOCUMENTAÇÃO: https://php.net/pt-br
+
+
+    CONEXAO COM O BANCO DE DADOS USANDO PDO
+
+    O QUE É O PDO?
+É uma interface(abstrata) que permite a conexao com varios bancos de dados a partir de drivers
+
+1° - > Abrir um arquivo de conexao.php e iniciar a conexao usando a classe PDO;
+PDO recebe 3 parametros
+1° dsn: string de conexao ou o driver que esta utilizando/mysql usa o host/dbname
+2° usuario
+3° usuario
+4° aceita parametros extras
+
+Posso fazer um echo simples so para ver se se conectou com o bd
+A documentação recomenda parametros de caminho absoluto, ou seja, criar variaveis contendo os caminhos
+
+
+        INSERINDO DADOS EM UMA TABELA -> EXECUTANDO UMA QUERY
+Comando $pdo->exec($sql)
+na variavel $sql passo a instrução que quero enviar para o bd de dados/ na maior parte dos caso é a criação de uma tabela
+
+        BUSCANDO UMA QUERY
+$pdo->query('SELECT *  FROM `nomeTabela`') //buscou a tabela e selecionou todos os campos
+$pdo->fetchAll(`Aqui voce pode manipular como quer que a busca aconteça. Olhar doc`) // retorna todos os dados da tabela
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PASSO A PASSO FAZENDO O PRIMEIRO BACK END VERDADEIRO
+
+Construir um back-end com PHP usando o padrão MVC (Model-View-Controller), o PDO (PHP Data Objects) e o Composer para carregamento automático de classes é uma ótima maneira de criar uma aplicação PHP estruturada e organizada. Vou guiá-lo passo a passo por esse processo:
+
+**Pré-requisitos:**
+- Um ambiente de desenvolvimento PHP configurado, como XAMPP, WAMP ou um servidor web compatível com PHP.
+- Composer instalado em seu sistema.
+- Conhecimento básico de PHP e programação orientada a objetos.
+
+**Passo 1: Iniciar um novo projeto**
+
+1. Crie uma pasta para o seu projeto e navegue até ela no terminal.
+
+**Passo 2: Inicializar um projeto Composer**
+
+2. Execute o seguinte comando para criar um arquivo `composer.json` e inicializar o projeto:
+
+   ```
+   composer init
+   ```
+
+   Siga as instruções do Composer para configurar seu projeto.
+
+**Passo 3: Instalar o Autoloader do Composer**
+
+3. Execute o seguinte comando para instalar o autoloader do Composer, que cuidará do carregamento automático de classes:
+
+   ```
+   composer require psr-4
+   ```
+
+**Passo 4: Definir a estrutura de pastas do projeto**
+
+4. Crie uma estrutura de pastas básica para o projeto:
+
+   ```
+   - app/
+     - Controllers/
+     - Models/
+     - Views/
+   - public/
+   - vendor/
+   - .htaccess
+   - index.php
+   ```
+
+**Passo 5: Configurar o arquivo `.htaccess`**
+
+5. Dentro do arquivo `.htaccess`, adicione regras para direcionar todas as solicitações para o arquivo `index.php`. Isso é importante para lidar com as rotas da aplicação:
+
+   ```apache
+   RewriteEngine On
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteRule ^(.*)$ index.php [QSA,L]
+   ```
+
+**Passo 6: Configurar o arquivo `index.php`**
+
+6. No arquivo `index.php`, você iniciará a aplicação e configurará o roteamento:
+
+   ```php
+   <?php
+   require_once 'vendor/autoload.php';
+
+   // Inicialize o aplicativo
+   $app = new \App\Core\Application();
+
+   // Defina as rotas
+   $app->router->get('/', 'HomeController@index');
+
+   // Execute a aplicação
+   $app->run();
+   ```
+
+**Passo 7: Criar controladores e modelos**
+
+7. Crie controladores na pasta `app/Controllers` e modelos na pasta `app/Models`. Certifique-se de seguir a estrutura de classes PSR-4. Por exemplo:
+
+   ```php
+   namespace App\Controllers;
+
+   class HomeController {
+       public function index() {
+           // Lógica do controlador
+       }
+   }
+   ```
+
+   ```php
+   namespace App\Models;
+
+   class UserModel {
+       // Métodos do modelo
+   }
+   ```
+
+**Passo 8: Criar as visualizações**
+
+8. Crie as visualizações na pasta `app/Views` usando arquivos `.php`. Você usará essas visualizações para renderizar a saída para o cliente.
+
+**Passo 9: Configurar o roteador**
+
+9. Crie uma classe de roteamento que corresponda aos controladores definidos em `index.php`. O roteador deve direcionar as solicitações para os controladores apropriados.
+
+**Passo 10: Configurar a conexão com o banco de dados usando o PDO**
+
+10. Configure uma classe de modelo para gerenciar a conexão com o banco de dados usando o PDO. Certifique-se de injetar essa classe nos controladores, onde você precisar acessar o banco de dados.
+
+**Passo 11: Criar as visões**
+
+11. Use as visões em seus controladores para gerar a saída HTML e retorne-a ao cliente.
+
+**Passo 12: Executar a aplicação**
+
+12. Execute sua aplicação em um servidor web e acesse-a em seu navegador. Você deve ser capaz de acessar diferentes rotas e ver o funcionamento da aplicação.
+
+Este é um guia geral para criar um back-end em PHP usando o padrão MVC, o PDO e o Composer. Lembre-se de que, à medida que sua aplicação cresce, você pode precisar adicionar mais funcionalidades, como autenticação, validação de formulários e segurança. É importante seguir as melhores práticas de segurança, como a prevenção de ataques de injeção de SQL, ao trabalhar com bancos de dados.
+
+
+
+
+
+
