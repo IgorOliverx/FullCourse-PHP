@@ -1,8 +1,9 @@
 <?php
+require_once 'vendor/autoload.php';
 $caminhoBanco = __DIR__ . '/banco.sqlite';
 
-//3 parametros
 $pdo = new PDO("sqlite:$caminhoBanco");//dsn = driver que vou utilizar
+//3 parametros
 
 echo 'Conectei' . PHP_EOL;
 

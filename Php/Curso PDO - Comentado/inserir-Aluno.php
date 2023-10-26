@@ -1,21 +1,28 @@
 <?php
+
 require_once 'vendor/autoload.php';
 
-$caminhoBanco = __DIR__ . '/banco.sqlite';
+
 
 //3 parametros
-$pdo = new PDO("sqlite:$caminhoBanco");//dsn = driver que vou utilizar
+$pdo = \Alura\Pdo\Infrastructure\Persistence\FabricaDeConexao::criarConexao(); //utilizando principiops da orientação a objetos
 
-echo 'Conectei' . PHP_EOL;
+$student = new \Alura\Pdo\Domain\Model\Student(
+    null,
+    'Marina Ruy Barbosa',
+    new DateTimeImmutable('2005-10-06')
+);
 
-$pdo->exec('CREATE TABLE students2 (id INTEGER PRIMARY KEY, name TEXT VARCHAR(255), birth_date TEXT);');
+//inserindo dados numa tabela. Preparando, verificando e executando
+$sqlInsert = "INSERT INTO students2 (name, birth_date) VALUES (:name, :birth_date)";
 
-echo 'criei a tabela ';
+$statement = $pdo->prepare($sqlInsert);//preparando a instrução para add infos
+$statement->bindValue(1, $student->name());//definindo um parametro pra tal coluna ou linha
+$statement->bindValue(2, $student->birthDate()->format('Y-m-d'));//definindo um parametro pra tal coluna ou linha
 
-$student = new \Alura\Pdo\Domain\Model\Student(null,'Igor oliveira', new DateTimeImmutable('2006-10-06'));
-
-$sqlInsert = "INSERT INTO students2 (name, birth_date) VALUES ('{$student->name()}', '{$student->birthDate()->format('Y-m-d')}');";
-
-//echo $sqlInsert;
-
-$pdo->exec($sqlInsert);
+//verificacao simples de execução concluida ou nao
+if($statement->execute()){
+    echo "Aluno incluído!";
+}else{
+echo "Erro de conexao";
+}
