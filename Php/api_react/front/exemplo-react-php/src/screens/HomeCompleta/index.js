@@ -1,0 +1,1 @@
+export { HomeCompleta } from "./HomeCompleta";
