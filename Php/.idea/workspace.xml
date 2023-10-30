@@ -4,36 +4,104 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b110d3ab-845b-485c-af9d-df00ea5b3031" name="Changes" comment="version ok">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projeto PDO/banco.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/.storybook/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/.storybook/preview-head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/.storybook/preview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/screens/HomeCompleta/HomeCompleta.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/screens/HomeCompleta/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/screens/HomeCompleta/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms_php+react/front/reactformphp/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms_php+react/front/reactformphp/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curso PDO - Comentado/banco.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Curso PDO - Comentado/banco.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curso PDO - Comentado/criarturma.php" beforeDir="false" afterPath="$PROJECT_DIR$/Curso PDO - Comentado/criarturma.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curso PDO - Comentado/src/Infrastructure/Persistence/FabricaDeConexao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Curso PDO - Comentado/src/Infrastructure/Persistence/FabricaDeConexao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curso PDO - Comentado/src/Infrastructure/Repositorio/PdoEstudanteRepositorio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Curso PDO - Comentado/src/Infrastructure/Repositorio/PdoEstudanteRepositorio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_react/front/exemplo-react-php/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms_php+react/front/reactformphp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/forms_php+react/front/reactformphp/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms_php+react/front/reactformphp/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms_php+react/front/reactformphp/src/index.js" beforeDir="false" />
+    <list default="true" id="b110d3ab-845b-485c-af9d-df00ea5b3031" name="Changes" comment="Corrigindo">
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/views/user/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/views/user/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/banco.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/criar-banco.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/editar-video.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/excluindo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/formulario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/novo-video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso PDO - Comentado/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso PDO - Comentado/src/Infrastructure/Persistence/ConnectionCreator.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso PDO - Comentado/src/Infrastructure/Persistence/ConnectionCreator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/conectaBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/conectaBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +111,14 @@
   <component name="ComposerConfigs">
     <option name="configs">
       <option value="$PROJECT_DIR$/Exemplo Laravel/laravel/composer.json" />
+      <option value="$PROJECT_DIR$/LaravelAngular/backend-app/composer.json" />
+      <option value="$PROJECT_DIR$/Crud_laravel/crud/composer.json" />
+      <option value="$PROJECT_DIR$/Curso PDO - Comentado/composer.json" />
+      <option value="$PROJECT_DIR$/Course Laravel API's/myproject/composer.json" />
     </option>
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/Laravel/composer.json</pharConfigPath>
+    <pharConfigPath>$PROJECT_DIR$/Projeto PDO/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -302,6 +374,340 @@
       <path value="$PROJECT_DIR$/Exemplo Laravel/laravel/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/Exemplo Laravel/laravel/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/Exemplo Laravel/laravel/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/composer" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/league/config" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/LaravelAngular/backend-app/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/composer" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/league/config" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/Crud_laravel/crud/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/Curso PDO - Comentado/vendor/composer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/league/config" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/composer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/Course Laravel API's/myproject/vendor/vlucas/phpdotenv" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -323,7 +729,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Olimpiada/Documents/Programando em PHP/Php",
+    "last_opened_file_path": "C:/Users/Olimpiada/Documents/Programando em PHP/Php/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -337,11 +743,27 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\MVC_PDO CRUD's\Curso MVC - Comentado\aluraplay" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\MVC_PDO CRUD's\Curso MVC - Comentado\aluraplay" />
       <recent name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\Laravel\resources\views\series" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.criarturma.php">
+  <component name="RunManager" selected="PHP Script.excluindo.php">
+    <configuration name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\Course Laravel API's\myproject\vendor\autoload.php" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/Course Laravel API's/myproject/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\Crud_laravel\crud\vendor\autoload.php" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/Crud_laravel/crud/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\LaravelAngular\backend-app\vendor\autoload.php" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/LaravelAngular/backend-app/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
     <configuration name="Exemplo Laravel\laravel" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/Exemplo Laravel/laravel/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
@@ -350,10 +772,13 @@
       <TestRunner configuration_file="$PROJECT_DIR$/Curso - Laravel - Apresentando MVC/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
-    <configuration name="FabricaDeConexao.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/src/Infrastructure/Persistence/FabricaDeConexao.php">
+    <configuration name="criar-banco.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/criar-banco.php">
       <method v="2" />
     </configuration>
     <configuration name="criarturma.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/criarturma.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="excluindo.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/excluindo.php">
       <method v="2" />
     </configuration>
     <configuration name="inserir-Aluno.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/inserir-Aluno.php">
@@ -362,16 +787,13 @@
     <configuration name="recuperandoInfos.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/recuperandoInfos.php">
       <method v="2" />
     </configuration>
-    <configuration name="removerInfos.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/removerInfos.php">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.excluindo.php" />
+        <item itemvalue="PHP Script.criar-banco.php" />
         <item itemvalue="PHP Script.criarturma.php" />
         <item itemvalue="PHP Script.recuperandoInfos.php" />
         <item itemvalue="PHP Script.inserir-Aluno.php" />
-        <item itemvalue="PHP Script.FabricaDeConexao.php" />
-        <item itemvalue="PHP Script.removerInfos.php" />
       </list>
     </recent_temporary>
   </component>
@@ -402,6 +824,10 @@
       <workItem from="1698230121246" duration="13707000" />
       <workItem from="1698316794065" duration="15128000" />
       <workItem from="1698403966062" duration="3405000" />
+      <workItem from="1698415680894" duration="58000" />
+      <workItem from="1698419681804" duration="1996000" />
+      <workItem from="1698663644834" duration="366000" />
+      <workItem from="1698664026625" duration="11213000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT">
       <option name="closed" value="true" />
@@ -611,7 +1037,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698331221262</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Corrigindo">
+      <option name="closed" value="true" />
+      <created>1698419730569</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1698419730569</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +1072,8 @@
     <MESSAGE value="Versionamento corrigido?" />
     <MESSAGE value="Crud Laravel + Angular -&gt; OK criacao de rotas + bd + table" />
     <MESSAGE value="version ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="version ok" />
+    <MESSAGE value="Corrigindo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

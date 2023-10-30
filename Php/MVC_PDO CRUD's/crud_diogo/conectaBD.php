@@ -1,8 +1,9 @@
 <?php
 global $conexao;
 //PDO -> PHP Data Objects
+//Classe de manipulação de BD com inúmeros métodos muitos bons
 try {
-    //Instância de um objeto da classe PDO que facilita a conexão com banco de dados
+    //Instância de um objeto da classe PDO
     $conexao = new PDO("mysql:host=127.0.0.1; dbname=crudsimples", "root", "");
     //método que controla erros. Fornece relatorios e recebe o errmode exception como parametro
     $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//doc:https://www.php.net/manual/pt_BR/pdo.setattribute.php

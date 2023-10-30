@@ -7,6 +7,12 @@
         <option value="$PROJECT_DIR$/Laravel/tests/Feature" />
         <option value="$PROJECT_DIR$/Exemplo Laravel/laravel/tests/Unit" />
         <option value="$PROJECT_DIR$/Exemplo Laravel/laravel/tests/Feature" />
+        <option value="$PROJECT_DIR$/Crud_laravel/crud/tests/Unit" />
+        <option value="$PROJECT_DIR$/Crud_laravel/crud/tests/Feature" />
+        <option value="$PROJECT_DIR$/Course Laravel API's/myproject/tests/Unit" />
+        <option value="$PROJECT_DIR$/Course Laravel API's/myproject/tests/Feature" />
+        <option value="$PROJECT_DIR$/LaravelAngular/backend-app/tests/Unit" />
+        <option value="$PROJECT_DIR$/LaravelAngular/backend-app/tests/Feature" />
       </list>
     </option>
   </component>
