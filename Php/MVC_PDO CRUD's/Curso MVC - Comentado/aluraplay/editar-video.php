@@ -5,7 +5,7 @@ $pdo = new PDO("sqlite:$db");
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if($id === false) {
-    header('Location: /index.php?sucesso=0');
+    header('Location: /listagem-videos.php?sucesso=0');
     exit();
 }
 
@@ -14,12 +14,14 @@ if($id === false) {
 $url = filter_input(INPUT_POST, 'url', FILTER_VALIDATE_URL);// fiz um filtro da url para verificar com metodos nativos se ela é verdadeira ou não
 //a função filter_var faz o mesmo, mas para variaveis
 if($url === false){
-    header('Location: /index.php?sucesso=0');//mando o user para a home
+    header('Location: /?sucesso=0');//mando o user para a home
     exit();//interrompo a execução do programa
 }
+
+
 $titulo = filter_input(INPUT_POST, 'titulo');
 if($titulo === false){
-    header('Location: /index.php?sucesso=0');//mando o user para a home
+    header('Location: /?sucesso=0');//mando o user para a home
     exit();//interrompo a execução do programa
 }
 
@@ -32,8 +34,8 @@ $stmt->bindValue(':id', $id, PDO::PARAM_INT); //parametros -> proteção contra 
 //executa o stmt -> consequentemente a instrução sql com uma verificação
 if ($stmt->execute() === false) {
     //cabecalho http que o navegador processa
-    header('Location: /index.php?sucesso=0');
+    header('Location: /?sucesso=0');
+}else {
+    header('Location: /?sucesso=1');
 }
-header('Location: /index.php?sucesso=1');
-
 

@@ -27,15 +27,15 @@ if (!empty($_POST)) {
 // Tentar Executar a SQL (INSERT)
 // Realizar a inserção das informações no BD (com o PHP)
         if ($stmt->execute($dados)) {
-            header("Location: index.php?msgSucesso=Cadastro realizado com sucesso!");
+            header("Location: listagem-videos.php?msgSucesso=Cadastro realizado com sucesso!");
         }
     } catch (PDOException $e) {
 //die($e->getMessage());
-        header("Location: index.php?msgErro=Falha ao cadastrar...");
+        header("Location: listagem-videos.php?msgErro=Falha ao cadastrar...");
     }
 }
 else {
-    header("Location: index.php?msgErro=Erro de acesso.");
+    header("Location: listagem-videos.php?msgErro=Erro de acesso.");
 }
 die();
 // Redirecionar para a página inicial (login) c/ mensagem erro/sucesso

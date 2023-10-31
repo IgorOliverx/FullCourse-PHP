@@ -1,4 +1,5 @@
 <?php
+
 $db = __DIR__ . '/banco.sqlite';
 $pdo = new PDO("sqlite:$db");
 
@@ -52,7 +53,6 @@ if($id !== false){
     <main class="container">
 
         <form class="container__formulario"
-              action="<?= $id === false ? '/nov-video.php' : '/editar-video.php'?>"
               method="post">
             <h2 class="formulario__titulo">Envie um vídeo!</h2>
                 <div class="formulario__campo">

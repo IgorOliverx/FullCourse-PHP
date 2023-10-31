@@ -40,14 +40,14 @@ if (!empty($_POST)) {
                 // Destruir a SESSAO
             session_destroy();
                 // Redirecionar p/ página inicial (login)
-            header("Location: index.php?msgErro=E-mail e/ou Senha inválido(s).");
+            header("Location: listagem-videos.php?msgErro=E-mail e/ou Senha inválido(s).");
         }
     } catch (PDOException $e) {
         die($e->getMessage());
     }
 }
 else {
-    header("Location: index.php?msgErro=Você não tem permissão para acessar esta página..");
+    header("Location: listagem-videos.php?msgErro=Você não tem permissão para acessar esta página..");
 }
 die();
 ?>

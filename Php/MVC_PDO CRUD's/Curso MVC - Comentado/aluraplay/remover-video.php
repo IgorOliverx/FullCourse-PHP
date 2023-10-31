@@ -10,8 +10,8 @@ $stmt->bindValue(1, $id); //parametros -> proteção contra sql injection
 //executa o stmt -> consequentemente a instrução sql com uma verificação
 if($stmt ->execute() === false){
     //cabecalho http que o navegador processa
-    header('Location: /index.php?sucesso=0');
+    header('Location: /?sucesso=0');
 }
-header('Location: /index.php?sucesso=1');
+header('Location: /?sucesso=1');
 
 

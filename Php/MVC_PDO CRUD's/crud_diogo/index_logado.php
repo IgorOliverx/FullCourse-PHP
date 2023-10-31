@@ -4,7 +4,7 @@ session_start();
 if (empty($_SESSION)) {
 // Significa que as variáveis de SESSAO não foram definidas.
 // Não pode acessar aqui. o sistema manda voltar para a pagina de login
-    header("Location: index.php?msgErro=Você precisa se autenticar no sistema.");
+    header("Location: listagem-videos.php?msgErro=Você precisa se autenticar no sistema.");
     die();
 }
 ?>

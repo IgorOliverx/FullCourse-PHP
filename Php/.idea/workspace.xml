@@ -4,104 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b110d3ab-845b-485c-af9d-df00ea5b3031" name="Changes" comment="Corrigindo">
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/sanctum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/views/user/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/views/user/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoLaravel/desafioLaravel/challenge/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/banco.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/criar-banco.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/editar-video.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/excluindo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/formulario.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/novo-video.php" afterDir="false" />
+    <list default="true" id="b110d3ab-845b-485c-af9d-df00ea5b3031" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud/bank.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud/deleteTudo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso PDO - Comentado/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso PDO - Comentado/src/Infrastructure/Persistence/ConnectionCreator.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso PDO - Comentado/src/Infrastructure/Persistence/ConnectionCreator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/conectaBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/conectaBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroducaoPHP/Superglobais/Superglobais" beforeDir="false" afterPath="$PROJECT_DIR$/IntroducaoPHP/Superglobais/Superglobais" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/banco.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/banco.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/editar-video.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/editar-video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/excluindo.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/remover-video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/formulario.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/formulario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/novo-video.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/novo-video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/cad_anuncio.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/cad_anuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/index_logado.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/index_logado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/processa_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/processa_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/processa_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/crud_diogo/processa_usuario.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -721,27 +644,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Olimpiada/Documents/Programando em PHP/Php/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Users\\Olimpiada\\Documents\\Programando em PHP\\Php\\teste_angularLaravel\\laravel-angular\\resources\\frontend\\angular\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Olimpiada/Documents/Programando em PHP/Php/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Olimpiada\\Documents\\Programando em PHP\\Php\\teste_angularLaravel\\laravel-angular\\resources\\frontend\\angular\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\MVC_PDO CRUD's\Curso MVC - Comentado\aluraplay" />
@@ -751,7 +674,10 @@
       <recent name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\Laravel\resources\views\series" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.excluindo.php">
+  <component name="RunManager" selected="PHP Script.update.php">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Php/Php/MVC_PDO CRUD's/crud/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="C:\Users\Olimpiada\Documents\Programando em PHP\Php\Course Laravel API's\myproject\vendor\autoload.php" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/Course Laravel API's/myproject/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
@@ -772,28 +698,25 @@
       <TestRunner configuration_file="$PROJECT_DIR$/Curso - Laravel - Apresentando MVC/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
+    <configuration name="create.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/crud/create.php">
+      <method v="2" />
+    </configuration>
     <configuration name="criar-banco.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/criar-banco.php">
       <method v="2" />
     </configuration>
-    <configuration name="criarturma.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/criarturma.php">
+    <configuration name="remover-video.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/remover-video.php">
       <method v="2" />
     </configuration>
-    <configuration name="excluindo.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/excluindo.php">
-      <method v="2" />
-    </configuration>
-    <configuration name="inserir-Aluno.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/inserir-Aluno.php">
-      <method v="2" />
-    </configuration>
-    <configuration name="recuperandoInfos.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Curso PDO - Comentado/recuperandoInfos.php">
+    <configuration name="update.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MVC_PDO CRUD's/crud/update.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.excluindo.php" />
+        <item itemvalue="PHP Script.update.php" />
+        <item itemvalue="PHP Script.create.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+        <item itemvalue="PHP Script.remover-video.php" />
         <item itemvalue="PHP Script.criar-banco.php" />
-        <item itemvalue="PHP Script.criarturma.php" />
-        <item itemvalue="PHP Script.recuperandoInfos.php" />
-        <item itemvalue="PHP Script.inserir-Aluno.php" />
       </list>
     </recent_temporary>
   </component>
@@ -828,6 +751,7 @@
       <workItem from="1698419681804" duration="1996000" />
       <workItem from="1698663644834" duration="366000" />
       <workItem from="1698664026625" duration="11213000" />
+      <workItem from="1698748598777" duration="14079000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT">
       <option name="closed" value="true" />
@@ -1073,7 +997,8 @@
     <MESSAGE value="Crud Laravel + Angular -&gt; OK criacao de rotas + bd + table" />
     <MESSAGE value="version ok" />
     <MESSAGE value="Corrigindo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
