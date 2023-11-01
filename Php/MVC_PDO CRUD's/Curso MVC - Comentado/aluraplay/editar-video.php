@@ -1,10 +1,13 @@
 <?php
 
+use Alura\Mvc\Entity\Video;
+use Alura\Mvc\Repository\VideoRepository;
+
 $db = __DIR__ . '/banco.sqlite';
 $pdo = new PDO("sqlite:$db");
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-if($id === false) {
+if($id === false || $id === null) {
     header('Location: /listagem-videos.php?sucesso=0');
     exit();
 }
@@ -23,13 +26,15 @@ $titulo = filter_input(INPUT_POST, 'titulo');
 if($titulo === false){
     header('Location: /?sucesso=0');//mando o user para a home
     exit();//interrompo a execução do programa
+
 }
 
-$sql = 'UPDATE videos SET url = :url, title = :title WHERE id = :id;'; //prepara uma instrução de update
-$stmt = $pdo->prepare($sql); // prepara o statement
-$stmt->bindValue(':url', $url); //parametros -> proteção contra sql injection
-$stmt->bindValue(':title', $titulo); //parametros -> proteção contra sql injection
-$stmt->bindValue(':id', $id, PDO::PARAM_INT); //parametros -> proteção contra sql injection
+
+$video = new Video($url, $titulo);
+$video->setId($id);
+
+$repositoy = new VideoRepository($pdo);
+$repositoy->updateVideo($video);
 
 //executa o stmt -> consequentemente a instrução sql com uma verificação
 if ($stmt->execute() === false) {

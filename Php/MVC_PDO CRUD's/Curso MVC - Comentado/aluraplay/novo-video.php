@@ -1,5 +1,7 @@
 <?php
 //definindo a variavel de onde se encontra o banco
+use Alura\Mvc\Entity\Video;
+
 $db = __DIR__ . '/banco.sqlite';
 //instancia do pdo -> classe de manipulação
 $pdo = new PDO("sqlite:$db");
@@ -17,16 +19,10 @@ if($titulo === false){
     exit();//interrompo a execução do programa
 }
 
-//instrução sql
-$sql = 'INSERT INTO videos (url, title) VALUES (?, ?);';
-//definindo um statement de preparação da minha instrução -> importante prevenir contra sql injection
-$stmt = $pdo->prepare($sql);
-$stmt ->bindValue(1, $url );//usando superglobais de forma simples para a instrução sql
-$stmt -> bindValue(2, $titulo );
-
+$repository = new \Alura\Mvc\Repository\VideoRepository($pdo);
 
 //executa o stmt -> consequentemente a instrução sql com uma verificação
-    if($stmt ->execute() === false){
+    if($repository->addVideo(new Video($url, $titulo))=== false){
         //cabecalho http que o navegador processa
         header('Location: /?sucesso=0');
     }
