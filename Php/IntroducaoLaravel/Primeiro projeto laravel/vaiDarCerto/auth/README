@@ -1,0 +1,35 @@
+ROTAS:
+- Vamos acessar as páginas do nosso projeto por meio de rotas;
+- As rotas chamam as views, que são representações gráficas das páginas;
+- Nas views temos os templates, onde há a estruturação da página por meio do hmtl ou um framework front end
+- Os templates também renderizam dados dinÂmicos por meio do PHP
+
+TEMPLATE ENGINE DO LARAVEL -> BLADE. VOU USAR PARA O DESENVOLVIMENTO DO BACK END
+-Blade é a template engine do laravel
+-Com ele, vamos deixar as nossas views dinâmicas;
+-Inserindo tags HTML e também dados que são fornecidos pelo banco;
+-Podemos dizer que as views serão responsabilidade do Blade -> no caso será o angular
+-Usamos diretivas -> começa com @
+
+ADICIONANDO ARQUIVOS ESTÁTICOS -> POSTERIORMENTE USAR UM CDN
+-Todos os recursos ficam na pasta public
+
+-CRIANDO LAYOUTS COM O BLADE
+-Se assemelha com o roteamento do angular. Criar uma única vez e reutilizar ou reaproveitar em várias páginas
+
+-PARAMETROS NAS ROTAS
+-Podemos mudar como uma view nos responde adicionando parâmetroa uma rota;
+-Ao definir a rota devemos colocar o parametro desta maneira:{id}
+-O laravel aceita também query parameters
+
+CONTROLLERS
+-Os Controllers são parte fundamental de toda aplicação laravel;
+-"Geralmente condesam maior parte da lógica
+-Tem o papel de enviar e esperar resposta do banco de dados
+-E também receber e enviar alguma resposta para as views
+-Controllers podem ser criados com um comando artisan -> php artisan make:controller nomeController
+-É comum retornar uma view ou redirecionar para uma url pelo controller
+
+
+
+-FAZENDO UM SISTEMA DE LOGIN E AUTENTICAÇÃO COM LARAVEL

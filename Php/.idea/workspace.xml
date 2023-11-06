@@ -4,60 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b110d3ab-845b-485c-af9d-df00ea5b3031" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/IntroducaoPHP/Arquivos e Streams/leitorLinhaALinha.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroducaoPHP/Arquivos e Streams/lista.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/config/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/pages/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/css/estilos-form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/css/estilos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/css/flexbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/img/cabecalho/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/img/cabecalho/video_call.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/DeleteVideoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/EditVideoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/Error404Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/NewVideoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/VideoFormController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Controller/VideoListController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Entity/Video.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/src/Repository/VideoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/views/fim-html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/views/inicio-html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/views/video-form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC/videos/views/video-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/criar-banco.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/editar-video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/fim-html.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/formulario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/inicio-html.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/novo-video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/remover-video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/src/Entity/Video.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/src/Repository/VideoRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/InstalledVersions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC_PDO CRUD's/Curso MVC - Comentado/aluraplay/vendor/composer/installed.php" beforeDir="false" />
-    </list>
+    <list default="true" id="b110d3ab-845b-485c-af9d-df00ea5b3031" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -792,7 +739,7 @@
       <workItem from="1698769836436" duration="2892000" />
       <workItem from="1698834464726" duration="8211000" />
       <workItem from="1699267567839" duration="2771000" />
-      <workItem from="1699270393014" duration="7400000" />
+      <workItem from="1699270393014" duration="7481000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT">
       <option name="closed" value="true" />
@@ -1026,7 +973,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698849247852</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="commit">
+      <option name="closed" value="true" />
+      <created>1699283928863</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1699283928863</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

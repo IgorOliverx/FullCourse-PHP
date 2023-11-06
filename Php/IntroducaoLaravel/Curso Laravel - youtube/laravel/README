@@ -1,0 +1,4 @@
+- Vamos acessar as páginas do nosso projeto por meio de rotas;
+- As rotas chamam as views, que são representações gráficas das páginas;
+- Nas views temos os templates, onde há a estruturação da página por meio do hmtl ou um framework front end
+- Os templates também renderizam dados dinÂmicos por meio do PHP
