@@ -7,11 +7,11 @@
 
 
 
-    @if($id != null)
-        <p>Exibindo produto id: {{$id}}</p>
-    @else
-        <p>Erro</p>
-    @endif
+{{--    @if($id != null)--}}
+{{--        <p>Exibindo produto id: {{$id}}</p>--}}
+{{--    @else--}}
+{{--        <p>Erro</p>--}}
+{{--    @endif--}}
 
 
 

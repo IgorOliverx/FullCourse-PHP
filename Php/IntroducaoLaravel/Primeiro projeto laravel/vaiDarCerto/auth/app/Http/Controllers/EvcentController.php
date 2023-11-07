@@ -2,25 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class EvcentController extends Controller
 {
     public function index()//convenção de que a barra seja o index
     {
-        $nome = 'Igor';
-        $idade = 17;
+      $events = Event::all(); // pega todos os registros do banco
 
-        $arra = [10,20,30,40];
-        $nomes = ["Igor", 'Lindo', "Voce consegue"];
-        return view('welcome',
-        [
-           'nome' => $nome,
-        'idade2' => $idade,
-            'profissao' => "Programador",
-            'arr' => $arra,
-            'nomes' => $nomes
-        ]);
+      return view('welcome', ['events' => $events]);
     }
 
     public function create()

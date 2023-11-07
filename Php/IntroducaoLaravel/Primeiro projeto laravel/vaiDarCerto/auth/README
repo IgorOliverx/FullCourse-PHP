@@ -32,4 +32,18 @@ CONTROLLERS
 
 
 
+INTRODUÇÃO AO MIGRATIONS NO LARAVEL:
+-As migrations funcionam como um versionamento de banco de dados
+-Podemos avançar e retroceder a qualquer momento; - php artisan migrate
+-Adicionar colunas e remover de forma facilitada;
+-Fazer o setup de DB de uma nova instalação em apenas um comando
+-Podemos verificar as migrations - php artisan migrate:status
+
+
+ELOQUENT ORM - OBJETO RELACIONAL DE MAPEAMENTO DO LARAVEL
+-Eloquent é a ORM do laravel; -> query do banco de dados(SELECT FROM, WHERE, DROP TABLE, ETC)
+-Cada tabela tem um MODEL que é responsável pela interação entre as requisições ao banco;
+-A convenção para o MODEL é o nome da entidade no singular, enquanto a tabela é a entidade no plural: Produto e produtos
+-No MODEL faremos poucas alterações dos arquivos, geralmente config específicas
+
 -FAZENDO UM SISTEMA DE LOGIN E AUTENTICAÇÃO COM LARAVEL
