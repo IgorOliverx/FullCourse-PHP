@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Curso MVC/videos/src" isTestSource="false" packagePrefix="Alura\Mvc\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso PDO - Comentado/src" isTestSource="false" packagePrefix="Alura\Pdo\" />
+      <sourceFolder url="file://$MODULE_DIR$/Projeto PDO/src" isTestSource="false" packagePrefix="Igor\Pdo\" />
+      <excludeFolder url="file://$MODULE_DIR$/Projeto PDO/vendor/composer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

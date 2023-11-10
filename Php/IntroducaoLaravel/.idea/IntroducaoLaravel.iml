@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Crud_laravel/crud/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/Crud_laravel/crud/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/Crud_laravel/crud/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/Crud_laravel/crud/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Crud_laravel/crud/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Crud_laravel/crud/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso - Laravel - Apresentando MVC/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso - Laravel - Apresentando MVC/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso - Laravel - Apresentando MVC/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso - Laravel - Apresentando MVC/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso - Laravel - Apresentando MVC/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso - Laravel - Apresentando MVC/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso Laravel - youtube/laravel/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso Laravel - youtube/laravel/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso Laravel - youtube/laravel/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso Laravel - youtube/laravel/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso Laravel - youtube/laravel/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso Laravel - youtube/laravel/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/LaravelAngular/backend-app/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/LaravelAngular/backend-app/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/LaravelAngular/backend-app/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/LaravelAngular/backend-app/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/LaravelAngular/backend-app/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/LaravelAngular/backend-app/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/desafioLaravel/challenge/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/desafioLaravel/challenge/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/desafioLaravel/challenge/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/desafioLaravel/challenge/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/desafioLaravel/challenge/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/desafioLaravel/challenge/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/teste_angularLaravel/laravel-angular/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/teste_angularLaravel/laravel-angular/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/teste_angularLaravel/laravel-angular/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/teste_angularLaravel/laravel-angular/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/teste_angularLaravel/laravel-angular/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/teste_angularLaravel/laravel-angular/tests/Unit" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

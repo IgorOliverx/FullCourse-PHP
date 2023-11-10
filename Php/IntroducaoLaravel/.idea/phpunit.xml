@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PHPUnit">
+    <option name="directories">
+      <list>
+        <option value="$PROJECT_DIR$/Crud_laravel/crud/tests/Unit" />
+        <option value="$PROJECT_DIR$/Crud_laravel/crud/tests/Feature" />
+        <option value="$PROJECT_DIR$/Curso Laravel - youtube/laravel/tests/Unit" />
+        <option value="$PROJECT_DIR$/Curso Laravel - youtube/laravel/tests/Feature" />
+        <option value="$PROJECT_DIR$/LaravelAngular/backend-app/tests/Unit" />
+        <option value="$PROJECT_DIR$/LaravelAngular/backend-app/tests/Feature" />
+        <option value="$PROJECT_DIR$/Curso - Laravel - Apresentando MVC/tests/Unit" />
+        <option value="$PROJECT_DIR$/Curso - Laravel - Apresentando MVC/tests/Feature" />
+        <option value="$PROJECT_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/tests/Unit" />
+        <option value="$PROJECT_DIR$/Primeiro projeto laravel/vaiDarCerto/auth/tests/Feature" />
+        <option value="$PROJECT_DIR$/teste_angularLaravel/laravel-angular/tests/Unit" />
+        <option value="$PROJECT_DIR$/teste_angularLaravel/laravel-angular/tests/Feature" />
+        <option value="$PROJECT_DIR$/desafioLaravel/challenge/tests/Unit" />
+        <option value="$PROJECT_DIR$/desafioLaravel/challenge/tests/Feature" />
+      </list>
+    </option>
+  </component>
+</project>
