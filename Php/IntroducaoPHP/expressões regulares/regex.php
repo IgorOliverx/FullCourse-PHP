@@ -12,7 +12,7 @@ foreach ($telefones as $telefone){
         echo "Telefone inválido!" . PHP_EOL;
     }
 
-   echo preg_replace('/\(([0-9]{2})\) (9?[0-9]{4}-[0-9]{4})/', '(XX) \2', $telefone) . PHP_EOL;
+   echo regex . phppreg_replace('/\(([0-9]{2})\) (9?[0-9]{4}-[0-9]{4})/', '(XX) \2', $telefone) . PHP_EOL;
 
 //preg_replace é substituição de uma regex
 //    regex === expressões regulares

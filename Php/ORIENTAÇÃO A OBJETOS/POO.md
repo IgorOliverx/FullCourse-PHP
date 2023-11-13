@@ -1,10 +1,13 @@
+     ##ORIENTAÇÃO A OBJETOS 
+
 Objeto ou instância é o nome dado para cada valor gerado através de uma classes, e os mesmos possuem atributos e métodos
 
 Composição de objetos é uma prática avançada de POO que consiste em dividir o sistema em várias classes.
 Pense em um carro. O mesmo é formado por um volante, um banco, rodas, vidros. Imagine que cada um destes itens
 é uma classe. Juntando eu tenho uma composição de objetos para atingir minha solução.
 
-CLASSES: As classes só estão prontas para serem usadas quando poderem criar objetos concretos.
+     ##CLASSES 
+ - As classes só estão prontas para serem usadas quando poderem criar objetos concretos.
 
 CLASSES ABSTRATAS: Classes abstratas são como moldes para as classe que as herdarem. Pense no seguinte, eu tenho uma classe Animal abstrata e as classes Mamíferos e Aves que herdam a classe Animal. Quando eu usar a herança para dizer que Mamiferos e Aves sao classes filhas de animais, eu obrigatoriamente tenho que usar todos os parametros + seus metodos que forem definidos como também abstratos -> não pode instanciar objetos
 MÉTODOS ABSTRATOS: A classe obrigatoriamente também precisa ser abstrata
@@ -17,7 +20,7 @@ MODELO: REPRESENTA ALGO REAL;
 
 CONCEITOS POO:
 
-1 - Abstração:
+## Abstração:
 Abstração significa trazer coisas do mundo real para seu programa, focando sempre naquilo que realmente importa para ele.
 EX: Criei uma classe chamada cachorro(já é uma abstração de algo real), e ao instanciar essa classe, quero que o meu programa só tenha os atributos que me interessem, ex:
 $ragnar - new Cachorro(public string $raca,public string $genero,public int $idade );
@@ -39,7 +42,7 @@ como exemplo, imaginamos a abstração referente a classe Animais, que se divide
 que contém objetos de sub-classe como Ser-humano, Jacaré e outros.
 
 
-2 - Encapsulamento:
+## Encapsulamento:
 ENCAPSULAMENTO: - proteção de dados e garantia de acesso/ modificadores getters and setters. Expor somente o que é necessário
 
 atributos = private
@@ -64,7 +67,7 @@ impedir o acesso direto ao estado de um objeto
  estes estados. Exemplo: você não precisa conhecer os detalhes dos circuitos de um telefone para utilizá-lo. A carcaça do telefone encapsula esses detalhes, provendo a você uma interface mais amigável (os botões, o monofone e os sinais de tom).
 
 
-3 - Herança:
+## Herança:
 Quando pensamos em herança, pensamos em herdar atributos e características de uma classe.
 Ex: Eu posso criar uma classe chamada Animal.php com atributos e métodos característicos comuns de animais
 e depois, posso criar a classe Cachorro.php e herdar atributos e métodos necessários da Classe animal,
