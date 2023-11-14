@@ -4,31 +4,26 @@ namespace App\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class Authenticate extends Middleware
 {
-    /**
-     * Get the path the user should be redirected to when they are not authenticated.
-     */
+    //metodo de redirecionamento caso a autenticação ja tenha acontecido
     protected function redirectTo(Request $request): ?string
     {
+        //retorna nulo se for uma api(JSON connection in the front end) ou retorna para a pagina de login
         return $request->expectsJson() ? null : route('login');
     }
 
 
-    public function handle($request, Closure|\Closure $next, ...$guards)
+    //metodo principal da classe()-> caso toda a autenticação funcione ou nao funcione
+    public function handle($request, Closure|\Closure $next, ...$guards)//cabeçalho recebe a requisição e algumas paradas
     {
-        $response = $next($request);
+       if(!Auth::check()){//se o usuario nao estiver autenticado
+           return redirect('/login');//redireciona para a alguma view que eu quiser
+       }
 
-        if (!auth()->check() && !$request->hasHeader('Authorization')) {
-            return response()->json(['error' => 'Unauthorized'], 401);
-        }
-
-        if (!$this->authenticate($request, $guards)) {
-            return response()->json(['error' => 'Forbidden'], 403);
-        }
-
-        return $response;
+        return $next($request);//caso ele esteja, prossegue com a requisição (nesse simulado estou tratando acesso a endpoints)
     }
 
 }

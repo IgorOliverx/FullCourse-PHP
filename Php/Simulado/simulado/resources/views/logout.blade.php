@@ -8,21 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-
-
-
-<form action="{{ route('login') }}" method="post">
+<h1>DEU CERTO O LOGIN</h1>
+<form action="{{ route('logout') }}" method="POST">
     @csrf
-    <label for="">Username:</label>
-    <input type="text" name="username" id="">
-    <br>
-    <label for="">Password:</label>
-    <input type="password" name="password" id="">
-
-    <input type="submit" value="enviar">
+    <button type="submit">Logout</button>
 </form>
-
-
 
 </body>
 </html>

@@ -2,7 +2,10 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\Authenticate;
+use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\EncryptCookies;
+use App\Http\Middleware\NotAuthenticate;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
 use App\Http\Middleware\TrimStrings;
 use App\Http\Middleware\VerifyCsrfToken;
@@ -30,9 +33,14 @@ class Kernel extends HttpKernel
         HandleCors::class,
         PreventRequestsDuringMaintenance::class,
         ValidatePostSize::class,
+        StartSession::class,
         TrimStrings::class,
         VerifyCsrfToken::class,
         ConvertEmptyStringsToNull::class,
+        ];
+
+    protected $routeMiddleware = [
+      'auth' => Authenticate::class,
     ];
 
     /**
@@ -55,6 +63,10 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
             SubstituteBindings::class,
             StartSession::class,
+        ],
+
+        'routes' =>[
+          'auth' => Authenticate::class,
         ],
     ];
 
