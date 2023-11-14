@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 
 //rotas para acessar as paginas listando as entidades(retorna imagem e etc)
-Route::get('/machines',[MachineController::class, 'card']); // ok
+Route::get('/machines',[MachineController::class, 'card']); // ok (listando entidades)
 Route::get('/processor', [ProcessorController::class, 'card']); //ok(listando entidades)
 Route::get('/motherboard', [MotherBoardController::class, 'card']); //ok(listando entidades)
 Route::get('/rammemory', [RamMemoryController::class, 'card']);//ok (listando entidades)
@@ -26,9 +26,12 @@ Route::get('/graphiccard', [GraphicCardController::class, 'card']);//ok(listando
 Route::get('/powersupply', [PowerSupplyController::class, 'card']);//ok(listando entidades)
 
 
+Route::group(['middleware' => ['web']], function(){
+    Route::get('/login', 'AuthController@showLoginForm')->name('login');
+    Route::post('/login', 'AuthController@login');
+    Route::post('/logout', 'AuthController@logout')->name('logout');
 
-//Route::post('/login', 'AuthController@login')->name('login');
-Route::post('/login', [AuthController::class, 'login']);
+});
 
 
 
@@ -44,4 +47,6 @@ Route::get('/api/storagedevice',[StorageDeviceController::class, 'index']); //ro
 Route::get('/api/powersupply',[PowerSupplyController::class, 'index']);
 
 Route::get('/api/rammemory',[RamMemoryController::class, 'index']);
+
+
 

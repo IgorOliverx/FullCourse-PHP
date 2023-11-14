@@ -2,25 +2,37 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+    public function mostrarLogin()
+    {
+        return view('login');
+    }
+
     public function login(Request $request)
     {
-        $request->validate([
-            'username' => 'required|string',
-            'password' => 'required|string',
-        ]);
-
-        $credentials = $request->only('username', 'password');
-
-        if (Auth::attempt($credentials)) {
-            $token = auth()->user()->createToken('API Token')->accessToken;
-            return response()->json(['token' => $token], 200);
-        }
-
-        return response()->json(['error' => 'Credenciais inválidas'], 401);
+        $credentials = $request->only('email', 'password');
     }
 
 }
+//public function showLoginForm()
+//{
+//    return view('auth.login');
+//}
+//
+//public function login(Request $request)
+//{
+//    $credentials = $request->only('email', 'password');
+//
+//    if (Auth::attempt($credentials)) {
+//        return redirect()->intended('dashboard');
+//    }
+//
+//    return back()->withErrors([
+//        'email' => 'The provided credentials do not match our records.',
+//    ]);
+//}

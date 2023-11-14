@@ -22,7 +22,6 @@ class User extends Authenticatable
     protected $fillable = [
         'username',
         'password',
-        'acessToken',
     ];
 
 }
