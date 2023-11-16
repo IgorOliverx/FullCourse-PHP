@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 
 //rotas para acessar as paginas listando as entidades(retorna imagem e etc)
-//Route::get('/machines',[MachineController::class, 'card']); // ok (listando entidades)
+Route::get('/machines',[MachineController::class, 'card']); // ok
 Route::get('/processor', [ProcessorController::class, 'card']); //ok(listando entidades)
 Route::get('/motherboard', [MotherBoardController::class, 'card']); //ok(listando entidades)
 Route::get('/rammemory', [RamMemoryController::class, 'card']);//ok (listando entidades)
@@ -25,17 +25,10 @@ Route::get('/storagedevice', [StorageDeviceController::class, 'card']);//ok (lis
 Route::get('/graphiccard', [GraphicCardController::class, 'card']);//ok(listando entidades)
 Route::get('/powersupply', [PowerSupplyController::class, 'card']);//ok(listando entidades)
 
-Route::group(['middleware' => ['web']], function(){
-    Route::get('/login', [AuthController::class, 'mostrarLogin'])->name('login');
-    Route::post('/login', [AuthController::class, 'login']);
-});
 
 
-//POR FAVOR FUNCIONA
-Route::middleware('auth')->group(function(){
-    Route::get('/machines', [MachineController::class, 'card']);
-});
-
+//Route::post('/login', 'AuthController@login')->name('login');
+Route::post('/login', [AuthController::class, 'login']);
 
 
 
@@ -51,6 +44,4 @@ Route::get('/api/storagedevice',[StorageDeviceController::class, 'index']); //ro
 Route::get('/api/powersupply',[PowerSupplyController::class, 'index']);
 
 Route::get('/api/rammemory',[RamMemoryController::class, 'index']);
-
-
 
