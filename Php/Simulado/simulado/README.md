@@ -238,3 +238,79 @@ Estabele uma conexão, acessa o banco de dados, captura as colunas, faz o hash d
             Route::get('/machines', [MachineController::class, 'card']);
             });
 
+## TUDO SOBRE O FACADE AUTH
+
+ - O Facade AUTH é uma classe de autenticação/recuperação/resete de informações sobre o usuário;
+Podemos verificar:
+ - Status
+ - Quantidade de usuários
+ - Quem está logado
+ - Permitir acesso a endpoints especificos a partir do middleware
+
+Autenticação rápida - SEM TOKEN
+# CONTROLER:
+- AuthController: Controla toda a lógica do usuário
+- PasswordController: Controla a lógica de resete de senhas
+EM 99% DOS CASOS NÃO É PRECISO ALTERAR ESSAS CLASSES;
+
+
+# ALGUNS MÉTODOS
+ - RECUPERAR UM ÚNICO USUÁRIO:
+                    
+        $user = Auth::user();
+
+   - PODE RECUPERAR UM USUÁRIO A PARTIR DE UMA INSTÂNCIA
+
+              <?php namespace App\Http\Controllers;
+        
+          use Illuminate\Http\Request;
+          use Illuminate\Routing\Controller;
+        
+          class ProfileController extends Controller
+          {
+     
+            public function updateProfile(Request $request)
+            {
+            if ($request->user()) {
+             $request->user() RETORNA UMA INSTÂNCIA DE UM USUARIO AUTENTICADO
+            }
+            }
+
+ - VERIFICAR SE O USUÁRIO ATUAL ESTÁ AUTENTICADO:
+
+            if(Auth::check()){
+            //instrução para o que queira fazer 
+          }
+
+ - PERMITIR ROTAS SOMENTE PARA USUÁRIOS AUTENTICADOS
+
+          Route::middleware('auth')->group(function(){
+          Route::get('/rota, [ClassController::class, 'metodo']);
+          }   
+OBSERVAÇÃO: LEMBRE-SE DE ADICIONAR ISSO AO MIDDLEWARE KERNEL:
+
+                protected $routeMiddleware = [
+                'auth' => Authenticate::class,
+                ];
+
+ - Autenticando usuários Manualmente(COMO FIZ)-> fica mais fácil pois eu nao uso o migrate nem as tabelas do laravel
+EXEMPLO SIMPLES:
+
+        public function autenticar()
+        {
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+        // Autenticado 
+        return redirect()->intended('dashboard');
+        }
+        }
+O método attempt aceita um array de chave/valor no primeiro parâmetro. Os valores no array serão usados para procurar o usuário na sua tabela do banco de dados. Então, no exemplo acima, o usuário será procurado pelo valor da columa email. Se o usuário for encontrado, o valor da senha no banco de dados será comparado com o password passado pelo método no array. Se tudo correr bem, uma sessão será iniciada para esse usuário.
+
+O método attempt irá retornar true se a autenticação for feita. Em outro caso, false será retornado.
+
+O método intended levará o usuário de volta a URL que estava acessando antes do filtro de autenticação ser acionado. Uma URI de retorno pode ser dada a este método no caso de o destino pretendido não estiver disponível.
+
+Se você desejar, também pode ser adicionado condições extras para a consulta além do email e senha do usuário. Por exemplo, você pode verificar se o usuário está marcado como "active(ativo)":
+
+ - DESLOGAR USUÁRIOS:
+
+        Auth::logout(); // limpa a sessao e todos os cookies

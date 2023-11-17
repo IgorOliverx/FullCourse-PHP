@@ -22,7 +22,10 @@
     <input type="submit" value="enviar">
 </form>
 
-
+<form action="{{route ('login')}}">
+    @csrf
+    <input type="submit" value="logout">
+</form>
 
 </body>
 </html>

@@ -16,47 +16,40 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//rotas para acessar as paginas listando as entidades(retorna imagem e etc)
-Route::get('/machines',[MachineController::class, 'card']); // ok (listando entidades)
-//Route::get('/machines',[MachineController::class, 'card']); // ok (listando entidades)
-Route::get('/processor', [ProcessorController::class, 'card']); //ok(listando entidades)
-Route::get('/motherboard', [MotherBoardController::class, 'card']); //ok(listando entidades)
-Route::get('/rammemory', [RamMemoryController::class, 'card']);//ok (listando entidades)
-Route::get('/storagedevice', [StorageDeviceController::class, 'card']);//ok (listando entidades)
-Route::get('/graphiccard', [GraphicCardController::class, 'card']);//ok(listando entidades)
-Route::get('/powersupply', [PowerSupplyController::class, 'card']);//ok(listando entidades)
 
 Route::group(['middleware' => ['web']], function(){
     Route::get('/login', [AuthController::class, 'mostrarLogin'])->name('login');
     Route::post('/login', [AuthController::class, 'login']);
+   // Route::get('/login', [AuthController::class, 'logout']);
 });
 
-Route::group(['middleware' => ['web']], function(){
-    Route::get('/login', 'AuthController@showLoginForm')->name('login');
-    Route::post('/login', 'AuthController@login');
-    Route::post('/logout', 'AuthController@logout')->name('logout');
 
-});
-//POR FAVOR FUNCIONA
+//POR FAVOR FUNCIONA -> Depois de adicionar no middleware criei um grupo de função com o parametro 'auth', feito no Authenticate no middleware
 Route::middleware('auth')->group(function(){
     Route::get('/machines', [MachineController::class, 'card']);
+    Route::get('/processor', [ProcessorController::class, 'card']); //ok(listando entidades)
+    Route::get('/motherboard', [MotherBoardController::class, 'card']); //ok(listando entidades)
+    Route::get('/rammemory', [RamMemoryController::class, 'card']);//ok (listando entidades)
+    Route::get('/storagedevice', [StorageDeviceController::class, 'card']);//ok (listando entidades)
+    Route::get('/graphiccard', [GraphicCardController::class, 'card']);//ok(listando entidades)
+    Route::get('/powersupply', [PowerSupplyController::class, 'card']);//ok(listando entidades)
+
+
+    //todas as rotas retornam um objeto json, agora so precisa fazer autenticação -> isso para a api
+    Route::get('/api/graphiccard',[GraphicCardController::class, 'index']); //Rotas ok
+
+    Route::get('/api/motherboard',[MotherBoardController::class, 'index']);
+
+    Route::get('/api/processor',[ProcessorController::class, 'index']);
+
+    Route::get('/api/storagedevice',[StorageDeviceController::class, 'index']); //rotas OK
+
+    Route::get('/api/powersupply',[PowerSupplyController::class, 'index']);
+
+    Route::get('/api/rammemory',[RamMemoryController::class, 'index']);
+
+    Route::get('montarmaquina', [MontarMaquinaController::class, 'index']);
 });
-
-
-
-
-//todas as rotas retornam um objeto json, agora so precisa fazer autenticação -> isso para a api
-Route::get('/api/graphiccard',[GraphicCardController::class, 'index']); //Rotas ok
-
-Route::get('/api/motherboard',[MotherBoardController::class, 'index']);
-
-Route::get('/api/processor',[ProcessorController::class, 'index']);
-
-Route::get('/api/storagedevice',[StorageDeviceController::class, 'index']); //rotas OK
-
-Route::get('/api/powersupply',[PowerSupplyController::class, 'index']);
-
-Route::get('/api/rammemory',[RamMemoryController::class, 'index']);
 
 
 

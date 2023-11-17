@@ -34,19 +34,27 @@ class AuthController extends Controller
             ]);
             //array associativo passando os valores de username e password para a variavel request
 
-            $passaAcesso = User::query()->get('accessToken');//passando acesso da consulta ao bd
+            //isso aqui abaixo por algum motivo nao me parece algo legal
             $teste = Auth::user()->accessToken;//isso aqui faz com que pegue os dados somente do usuario em questão
             //evita retornar todos os token do banco de dados -> NE IGOR ISSO ME DEU DOR DE CABEÇA COISA TAO BESTA
 
-            //metodo attempt meio que compara os valores que eu passar com a classe Auth que é uma mão na roda e cuida de tudo
+            //metodo attempt meio que compara os valores que eu passar com o Facade Auth que é uma mão na roda e cuida de tudo
             if (Auth::attempt($credenciais)) {
                 //se bater o username e password
-                return redirect()->intended("/?$teste");
+                return redirect()->intended("/?$teste");//pq tem hora que isso funciona e hora que não?
                 //redirecionei para a home '/' e usando o metodo intended passei o token
             }
+          //  if(Auth::)
 
             return back()->withErrors("Credenciais inválidas");
         }
+
+    public function logout()
+    {
+    if(Auth::check()) {
+        Auth::logout();
+    }
+    }
 
 }
 

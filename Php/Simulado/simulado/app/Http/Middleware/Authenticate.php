@@ -20,7 +20,7 @@ class Authenticate extends Middleware
     public function handle($request, Closure|\Closure $next, ...$guards)//cabeçalho recebe a requisição e algumas paradas
     {
        if(!Auth::check()){//se o usuario nao estiver autenticado
-           return redirect('/login');//redireciona para a alguma view que eu quiser
+           return redirect('/Unauthorized');//redireciona para a alguma view que eu quiser
        }
 
         return $next($request);//caso ele esteja, prossegue com a requisição (nesse simulado estou tratando acesso a endpoints)
