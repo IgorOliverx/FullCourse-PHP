@@ -56,7 +56,11 @@ class MotherBoardController extends Controller
         }
 
         //dd($motherboard);
-        //retornando a view passando o array associativo
-        return view('motherboard', ['motherboards' => $motherboards]);
+        //retornando a view passando o array associativo -> vou retornar para duas views mas o indicado era usar um middleware para tornar isso global
+        return view('motherboard', ['params' => ['motherboards' => $motherboards]]);
+
+        return view('maquinas', ['params' => ['motherboards' => $motherboards]]);
+
+
     }
 }

@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -34,26 +35,34 @@ class AuthController extends Controller
             ]);
             //array associativo passando os valores de username e password para a variavel request
 
-            //isso aqui abaixo por algum motivo nao me parece algo legal
-            $teste = Auth::user()->accessToken;//isso aqui faz com que pegue os dados somente do usuario em questão
+            //isso aqui abaixo por algum motivo nao me parece algo legal(tem hora que funciona e hora que nao)
+           // $teste = Auth::user()->accessToken;//isso aqui faz com que pegue os dados somente do usuario em questão
             //evita retornar todos os token do banco de dados -> NE IGOR ISSO ME DEU DOR DE CABEÇA COISA TAO BESTA
 
             //metodo attempt meio que compara os valores que eu passar com o Facade Auth que é uma mão na roda e cuida de tudo
             if (Auth::attempt($credenciais)) {
                 //se bater o username e password
-                return redirect()->intended("/?$teste");//pq tem hora que isso funciona e hora que não?
+                return redirect()->intended("/?");//pq tem hora que isso funciona e hora que não?
                 //redirecionei para a home '/' e usando o metodo intended passei o token
+            }else{
+                Session::flash('alert', 'Deu pau no login, tente de novo');
+                return back()->withErrors("Credenciais inválidas");
             }
-          //  if(Auth::)
-
-            return back()->withErrors("Credenciais inválidas");
         }
 
     public function logout()
     {
-    if(Auth::check()) {
-        Auth::logout();
+    if(Auth::check()) {//se o user estiver autenticado
+        Auth::logout();//logout
     }
+        return back()->withErrors("LogOut concluído!");
+    }
+
+    public function verificaLogin()
+    {
+        if(Auth::check()){
+            return back()->withErrors("Usuario já autenticado");
+        }
     }
 
 }

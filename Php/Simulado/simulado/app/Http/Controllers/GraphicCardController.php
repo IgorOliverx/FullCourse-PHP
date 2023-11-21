@@ -21,7 +21,7 @@ class GraphicCardController extends Controller
         // Decodifique o JSON
         $json = json_decode($data, true);
 
-        //procurando a url das imagens com o asset
+        //procurando a url das imagens com o asset e indexando ao array associativo
         foreach ($json as &$item) {
             $item['imageUrl'] = asset("midias/images/{$item['imageUrl']}.png");
         }

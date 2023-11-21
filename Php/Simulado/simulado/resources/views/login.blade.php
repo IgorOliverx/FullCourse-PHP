@@ -1,4 +1,5 @@
-<!doctype html>
+@php use Illuminate\Support\Facades\Session; @endphp
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,11 @@
 <body>
 
 
-
+@if(session('erro'))
+    <div class="alert alert-danger">
+        {{ session('erro') }}
+    </div>
+@endif
 <form action="{{ route('login') }}" method="post">
     @csrf
     <label for="">Username:</label>
@@ -21,11 +26,16 @@
 
     <input type="submit" value="enviar">
 </form>
-
-<form action="{{route ('login')}}">
+<form action="{{ route('logout') }}" method="post">
     @csrf
-    <input type="submit" value="logout">
+    <button type="submit">Logout</button>
 </form>
+
+@if(Session::has('alert'))
+    {!! Session::get('alert')!!}
+    <script>alert("POr favor funciona")</script>
+@endif
 
 </body>
 </html>
+

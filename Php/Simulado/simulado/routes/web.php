@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\AlaApiController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CardController;
 use App\Http\Controllers\GraphicCardController;
 use App\Http\Controllers\MachineController;
+use App\Http\Controllers\MaquinaController;
 use App\Http\Controllers\MotherBoardController;
 use App\Http\Controllers\PowerSupplyController;
 use App\Http\Controllers\ProcessorController;
@@ -20,7 +22,8 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function(){
     Route::get('/login', [AuthController::class, 'mostrarLogin'])->name('login');
     Route::post('/login', [AuthController::class, 'login']);
-   // Route::get('/login', [AuthController::class, 'logout']);
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    // Route::get('/login', [AuthController::class, 'logout']);
 });
 
 
@@ -48,7 +51,9 @@ Route::middleware('auth')->group(function(){
 
     Route::get('/api/rammemory',[RamMemoryController::class, 'index']);
 
-    Route::get('montarmaquina', [MontarMaquinaController::class, 'index']);
+    Route::get('montarmaquina', [MaquinaController::class, 'index']);
+
+    Route::get('alatech/api', [AlaApiController::class, 'index']);
 });
 
 

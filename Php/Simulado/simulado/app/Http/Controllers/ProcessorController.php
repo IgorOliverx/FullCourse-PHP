@@ -59,6 +59,7 @@ class ProcessorController extends Controller
         //dd($processors);
 
         return view('processor', ['processors' => $processors]);
+        return view('maquinas', ['processors' => $processors]);
     }
 
 }
