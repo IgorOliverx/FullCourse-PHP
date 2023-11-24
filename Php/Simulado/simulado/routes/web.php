@@ -38,22 +38,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/powersupply', [PowerSupplyController::class, 'card']);//ok(listando entidades)
 
 
-    //todas as rotas retornam um objeto json, agora so precisa fazer autenticação -> isso para a api
-    Route::get('/api/graphiccard',[GraphicCardController::class, 'index']); //Rotas ok
 
-    Route::get('/api/motherboard',[MotherBoardController::class, 'index']);
-
-    Route::get('/api/processor',[ProcessorController::class, 'index']);
-
-    Route::get('/api/storagedevice',[StorageDeviceController::class, 'index']); //rotas OK
-
-    Route::get('/api/powersupply',[PowerSupplyController::class, 'index']);
-
-    Route::get('/api/rammemory',[RamMemoryController::class, 'index']);
-
-    Route::get('montarmaquina', [MaquinaController::class, 'index']);
-
-    Route::get('alatech/api', [AlaApiController::class, 'index']);
 });
 
 

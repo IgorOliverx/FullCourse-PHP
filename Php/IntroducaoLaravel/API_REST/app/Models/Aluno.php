@@ -10,8 +10,6 @@ class Aluno extends Model
 {
     use HasFactory;
 
-    protected $table = 'alunos';
-
     /**
      * Define a relação entre aluno e turma
      * @return BelongsTo

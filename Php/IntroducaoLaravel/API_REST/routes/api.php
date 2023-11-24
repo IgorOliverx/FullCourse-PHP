@@ -24,7 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
      *
     */
 Route::get('/alunos', [AlunoController::class, 'index'])->name('alunos.index');
-Route::get('alunos/{id}', [])->name('alunos.show');
+Route::get('alunos/{aluno}', [AlunoController::class, 'show'])->name('alunos.show');
 Route::post('/alunos', [])->name('alunos.store');
 Route::put('/alunos', [])->name('alunos.update');
 Route::delete('/alunos', [])->name('alunos.destroy');
