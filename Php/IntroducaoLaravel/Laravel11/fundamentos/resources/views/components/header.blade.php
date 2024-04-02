@@ -36,7 +36,7 @@
             <a href="/login" class="lista-1">Login</a>
             <a href="/register" class="lista-1">Cadastro</a>
             <a href="/teste" class="lista-1">Perfil</a>
-            <a href="/" class="lista-1">Logout</a>
+            <a href="/" class="lista-1">Sair</a>
 
         </ul>
     </nav>

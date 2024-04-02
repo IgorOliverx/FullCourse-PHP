@@ -45,6 +45,16 @@
     <p>
         Conteudo principal da pagina
     </p>
+
+
+
+    <h1>
+        @if(\Illuminate\Support\Facades\Route::has('login'))
+            @auth
+                <p>voce esta logado</p>
+            @endauth
+        @endif
+    </h1>
 </main>
 
 </body>
