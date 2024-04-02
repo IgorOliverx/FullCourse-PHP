@@ -7,9 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 <body>
-
-
-<x-formLogin></x-formLogin>
+vsf.
 </body>
 </html>

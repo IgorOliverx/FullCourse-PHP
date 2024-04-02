@@ -20,12 +20,12 @@ class AuthenticatedController extends Controller
     public function index():View
     {
         //especificar um tipo de dado para o retorno é uma boa prática!!!
-        
+
 
         return view('auth.login');
     }
 
-   
+
     /**
      * Método para autenticar usuários, e para dividir resp. posso criar um novo request personalizado
      * Esse request personalizado seria para por exemplo limitar numero de tentativas, a partir de x tentativas bloquear, enviar email de recuperação de senha ou seja lá o que quiser aplicar
@@ -37,13 +37,13 @@ class AuthenticatedController extends Controller
 
         //regenerar a sessão
         $request->session()->regenerateToken();
-        var_dump('ok, isso definitivamente funcionou');
+
 
         //retornar algo (vou retornar um json sla)
         return redirect('/');
     }
 
-   
+
 
     /**
      * Excluir a sessão autenticada

@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca9daca6-aaaf-4efb-899e-bdea2363ff7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundamentos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/app/Http/Controllers/Auth/AuthenticatedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/app/Http/Controllers/Auth/AuthenticatedController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fundamentos/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,9 +145,9 @@
       <path value="$PROJECT_DIR$/fundamentos/vendor/phpunit/php-timer" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2eBBB4MYKrltRow2ppvxIWjFg0d" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -154,7 +159,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Olimpíada/Documents/PHP/FullCourse-PHP/Php/IntroducaoLaravel/Laravel11",
+    "last_opened_file_path": "C:/Users/Olimpíada/Documents/PHP/FullCourse-PHP/Php/IntroducaoLaravel/Laravel11/fundamentos/resources/views/auth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -163,6 +168,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Olimpíada\Documents\PHP\FullCourse-PHP\Php\IntroducaoLaravel\Laravel11\fundamentos\resources\views\auth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olimpíada\Documents\PHP\FullCourse-PHP\Php\IntroducaoLaravel\Laravel11\fundamentos\resources\views\components" />
+      <recent name="C:\Users\Olimpíada\Documents\PHP\FullCourse-PHP\Php\IntroducaoLaravel\Laravel11\fundamentos\resources\views\auth" />
+      <recent name="C:\Users\Olimpíada\Documents\PHP\FullCourse-PHP\Php\IntroducaoLaravel\Laravel11\fundamentos\public" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/fundamentos/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
@@ -178,6 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711367952495</updated>
       <workItem from="1711367953538" duration="3579000" />
+      <workItem from="1712056234313" duration="8728000" />
     </task>
     <servers />
   </component>

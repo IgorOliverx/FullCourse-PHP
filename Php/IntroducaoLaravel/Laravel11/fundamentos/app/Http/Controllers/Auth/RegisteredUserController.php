@@ -44,11 +44,13 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         //Já autenticando o usuário
-        Auth::login($user);
+        //Auth::login($user);
 
 
-        return $user;
+        //return $user;
+
+        return redirect('/');
     }
 
-   //Note que eu só preciso deste método nesta classe
+   //Note que eu só preciso deste método nesta classe por enquanto :)
 }
