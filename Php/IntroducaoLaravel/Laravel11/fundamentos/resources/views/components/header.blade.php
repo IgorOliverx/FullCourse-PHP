@@ -33,10 +33,18 @@
     <h1>Home</h1>
     <nav>
         <ul class="lista">
-            <a href="/login" class="lista-1">Login</a>
-            <a href="/register" class="lista-1">Cadastro</a>
+            <a href="{{route('login')}}" class="lista-1">Login</a>
+            <a href="{{route('register')}}" class="lista-1">Cadastro</a>
             <a href="/teste" class="lista-1">Perfil</a>
-            <a href="/" class="lista-1">Sair</a>
+
+            @if(\Illuminate\Support\Facades\Route::has('logout'))
+                @auth
+                    <form action="{{route('logout')}}" method="post">
+                        @csrf
+                <a href="{{route('logout')}}" class="lista-1" onclick="event.preventDefault(); this.closest('form').submit();">Sair</a>
+                    </form>
+                @endauth
+            @endif
 
         </ul>
     </nav>

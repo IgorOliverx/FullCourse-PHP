@@ -49,6 +49,7 @@
 
 
     <h1>
+        <!-- Com esse bloco posso fazer a verificação se a rota existe, e como uso a anotação de auth, confiro se o user está logado -->
         @if(\Illuminate\Support\Facades\Route::has('login'))
             @auth
                 <p>voce esta logado</p>
