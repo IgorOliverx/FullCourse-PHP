@@ -11,6 +11,7 @@
 <style>
     body{
         margin: 0;
+        background-image: url({{asset('img/DOm Pizza.png')}});
     }
     header{
         box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
@@ -31,10 +32,9 @@
         color: black;
         margin-right: 1rem;
     }
-    .container-principal{
+    .container-principal {
         margin-top: 150px;
     }
-
 
 </style>
 <body>
@@ -42,9 +42,7 @@
   <x-header></x-header>
 
 <main class="container-principal">
-    <p>
-        Conteudo principal da pagina
-    </p>
+
 
 
 
@@ -56,7 +54,16 @@
             @endauth
         @endif
     </h1>
+
+
+
+    atencao este link pode te ajudar a deixcar o servidor do artisan como live ser5ver
+    <a href="https://github.com/ritwickdey/live-server-web-extension/blob/master/docs/Setup.md">CLICA AQUI PARÇA</a>
+    OU PESQUISA POR
+
+    LIVE VSCODE ARTISAN LARAVEL
 </main>
 
+<x-footer></x-footer>
 </body>
 </html>

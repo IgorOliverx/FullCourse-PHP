@@ -36,7 +36,6 @@
             <a href="{{route('login')}}" class="lista-1">Login</a>
             <a href="{{route('register')}}" class="lista-1">Cadastro</a>
             <a href="/teste" class="lista-1">Perfil</a>
-
             @if(\Illuminate\Support\Facades\Route::has('logout'))
                 @auth
                     <form action="{{route('logout')}}" method="post">
