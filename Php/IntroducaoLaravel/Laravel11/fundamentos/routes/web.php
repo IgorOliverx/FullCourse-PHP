@@ -25,3 +25,9 @@ Route::post('/login', [AuthenticatedController::class, 'store'])->name('login');
 
 //rota de logout
 Route::post('/logout', [AuthenticatedController::class, 'destroy'])->name('logout');
+
+
+//LEMBRE-SE DE PROTEGER ESTA ROTA DEPOIS
+Route::resources([
+    'pizza' => \App\Http\Controllers\PizzaController::class
+]);

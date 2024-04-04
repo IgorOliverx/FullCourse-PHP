@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="">
+    @vite('resources/js/app.js')
     <title>Laravel - Fundamentos</title>
 </head>
 <style>
@@ -42,10 +43,6 @@
   <x-header></x-header>
 
 <main class="container-principal">
-
-
-
-
     <h1>
         <!-- Com esse bloco posso fazer a verificação se a rota existe, e como uso a anotação de auth, confiro se o user está logado -->
         @if(\Illuminate\Support\Facades\Route::has('login'))
@@ -55,14 +52,8 @@
         @endif
     </h1>
 
-
-
-    atencao este link pode te ajudar a deixcar o servidor do artisan como live ser5ver
-    <a href="https://github.com/ritwickdey/live-server-web-extension/blob/master/docs/Setup.md">CLICA AQUI PARÇA</a>
-    OU PESQUISA POR
-
-    LIVE VSCODE ARTISAN LARAVEL
 </main>
+
 
 <x-footer></x-footer>
 </body>

@@ -36,12 +36,14 @@
             <a href="{{route('login')}}" class="lista-1">Login</a>
             <a href="{{route('register')}}" class="lista-1">Cadastro</a>
             <a href="/teste" class="lista-1">Perfil</a>
+            <a href="/pizza" class="lista-1">Pedidos</a>
             @if(\Illuminate\Support\Facades\Route::has('logout'))
                 @auth
                     <form action="{{route('logout')}}" method="post">
                         @csrf
                 <a href="{{route('logout')}}" class="lista-1" onclick="event.preventDefault(); this.closest('form').submit();">Sair</a>
                     </form>
+                    <a href="{{route('pizza.create')}}" class="lista-1">Cadastrar pizza</a>
                 @endauth
             @endif
 
