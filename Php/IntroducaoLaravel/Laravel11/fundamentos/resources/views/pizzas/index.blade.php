@@ -22,5 +22,15 @@
         <p class="preco_pizza">{{$pizza->preco_pizza}}</p>
     </div>
 @endforeach
+
+
+
+
+
+- cadastrar a pizza e a imagem seguindo tutorial do video - CONCLUIDO
+- estilizar o card da pizza e direcionar a correta agora
+- criar uma factory que sempre cadastra um usuário
+- tornar esse usuário o único a ser apto a cadastrar uma pizza
+
 </body>
 </html>

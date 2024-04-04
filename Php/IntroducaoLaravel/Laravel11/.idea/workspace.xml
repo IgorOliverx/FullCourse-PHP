@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca9daca6-aaaf-4efb-899e-bdea2363ff7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundamentos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundamentos/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/resources/views/components/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundamentos/resources/views/dashboard.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundamentos/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fundamentos/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +200,7 @@
       <updated>1711367952495</updated>
       <workItem from="1711367953538" duration="3579000" />
       <workItem from="1712056234313" duration="9773000" />
-      <workItem from="1712227595344" duration="12433000" />
+      <workItem from="1712227595344" duration="14434000" />
     </task>
     <servers />
   </component>
