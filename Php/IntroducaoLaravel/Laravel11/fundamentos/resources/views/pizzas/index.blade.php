@@ -10,6 +10,7 @@
 </head>
 <body>
 <h1>Retornando as pizzas cadastradas</h1>
+
 <hr>
 <button type="submit">Pizzas</button>
 <br>
@@ -17,7 +18,7 @@
 @foreach($pizzas as $pizza)
     <div class="container-card">
         <p class="titulo_pizza">{{$pizza->nome_pizza}}</p>
-       <section class="img-pizza"> <img src="{{asset("/storage/{$pizza->img_pizza}")}}" alt=[imagem] ></section>
+       <img src="{{asset("/storage/{$pizza->img_pizza}")}}" alt=[imagem] >
         <p class="descricao_pizza">{{$pizza->descricao_pizza}}</p>
         <p class="preco_pizza">{{$pizza->preco_pizza}}</p>
     </div>

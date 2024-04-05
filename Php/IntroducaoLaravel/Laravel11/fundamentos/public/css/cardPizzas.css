@@ -12,26 +12,28 @@
 .container-card{
     box-shadow: 0px 0 20px rgba(.1,.1,.1, .1);
     background: #fff;
-    width: 30rem;
-    margin-left: 35px;
+    width: 24rem;
+    height: 12rem;
+    margin-left: 2rem;
     border-radius: 10px;
-    padding: 20px;
+    padding: 1rem;
     margin-bottom: 16px;
 }
 .container-card img{
+    width: 8rem;
+    height: 8rem;
     border-radius: 15px;
     background-size: cover;
+    position: absolute;
+    margin-left: 33%;
 }
 
-.container-card .img-pizza{
-    width: 100px;
-    height: 100px;
-    margin-left: 43%;
-    margin-bottom: 50px;
 
-}
 .container-card .titulo_pizza{
     color: #2d3748;
     font-family: "Inter", sans-serif;
-
+}
+.container-card .descricao_pizza {
+    color: red;
+    top: 0;
 }

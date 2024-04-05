@@ -6,13 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="">
-    @vite('resources/js/app.js')
     <title>Laravel - Fundamentos</title>
 </head>
 <style>
     body{
         margin: 0;
-        background-image: url({{asset('img/DOm Pizza.png')}});
+
     }
     header{
         box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
@@ -53,7 +52,6 @@
     </h1>
 
 </main>
-
 
 <x-footer></x-footer>
 </body>
